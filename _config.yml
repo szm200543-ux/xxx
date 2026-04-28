@@ -1,4 +1,4 @@
-# Hexo Configuration
+﻿# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
@@ -104,6 +104,6 @@ theme: shoka
 deploy:
   type: 'git'
   repo: https://github.com/szm200543-ux/xxx.git  # 替换为你的 GitHub 仓库地址
-  branch: gh-pages  # GitHub Pages 通常用 gh-pages 分支
+  branch: master  # GitHub Pages 通常用 gh-pages 分支
   message: 'Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }}'  # 部署提交信息
 
